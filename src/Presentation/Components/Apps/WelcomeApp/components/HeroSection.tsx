@@ -1,19 +1,20 @@
-import { type FC } from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { Box, Text, Group, Button, Avatar, Image } from '@mantine/core';
-import { FiLinkedin, FiGithub } from 'react-icons/fi';
-import { PROFILE } from '@/Shared/Constants/profileData';
-import classes from './HeroSection.module.css';
-import Yo from '/Yo.jpg';
+import { type FC } from "react";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { Box, Text, Group, Button, Avatar, Image } from "@mantine/core";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { PROFILE } from "@/Shared/Constants/profileData";
+import classes from "./HeroSection.module.css";
+import Yo from "public/Yo.jpg";
 
 const HeroSection: FC = () => {
-  const { t, i18n } = useTranslation('welcome');
+  const { t, i18n } = useTranslation("welcome");
 
   const handleDownloadCV = () => {
-    const cvPath = i18n.language === 'es' ? PROFILE.cvUrls.es : PROFILE.cvUrls.en;
+    const cvPath =
+      i18n.language === "es" ? PROFILE.cvUrls.es : PROFILE.cvUrls.en;
     const base = import.meta.env.BASE_URL;
-    window.open(`${base}${cvPath}`, '_blank');
+    window.open(`${base}${cvPath}`, "_blank");
   };
 
   const handleContactMe = () => {
@@ -43,7 +44,7 @@ const HeroSection: FC = () => {
           {PROFILE.name}
         </Text>
         <Text c="dimmed" size="lg">
-          {t('hero.title')}
+          {t("hero.title")}
         </Text>
       </motion.div>
 
@@ -83,10 +84,10 @@ const HeroSection: FC = () => {
       >
         <Group className={classes.actions}>
           <Button variant="filled" onClick={handleDownloadCV}>
-            {t('hero.downloadCV')}
+            {t("hero.downloadCV")}
           </Button>
           <Button variant="light" onClick={handleContactMe}>
-            {t('hero.contactMe')}
+            {t("hero.contactMe")}
           </Button>
         </Group>
       </motion.div>

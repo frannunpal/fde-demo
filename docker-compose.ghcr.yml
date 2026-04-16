@@ -1,0 +1,35 @@
+# Docker Compose for downloading and running FDE Desktop from GitHub Container Registry
+# Usage:
+#   docker compose -f docker-compose.ghcr.yml up
+#   IMAGE_TAG=latest docker compose -f docker-compose.ghcr.yml up
+
+services:
+  fde-desktop:
+    image: ghcr.io/frannunpal/fde-desktop:${IMAGE_TAG:-latest}
+    ports:
+      - '5173:8080'
+    volumes:
+      # Named volumes for user data
+      - workspace:/app/workspace
+      - dist-apps:/app/dist-apps
+      # Bind mount for user apps (writable for apps-builder to install deps)
+      - ./apps:/app/apps
+    environment:
+      - NODE_ENV=production
+      - IN_DOCKER=true
+      - EXTERNAL_PORT=5173
+      - WORKSPACE_PATH=/app/workspace
+      - APPS_PATH=/app/apps
+      - APPS_DIST=/app/dist-apps
+    stdin_open: true
+    tty: true
+    healthcheck:
+      test: ['CMD', 'wget', '-q', '--spider', 'http://localhost:8080/health']
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  workspace:
+  dist-apps:

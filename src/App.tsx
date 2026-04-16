@@ -1,23 +1,36 @@
-import { APITester } from "./APITester";
-import "./index.css";
+import { FdeDesktop, registerDesktopApps } from "@fde-desktop/fde-core";
+import {
+  userApps,
+  userAppEntries,
+} from "@presentation/Components/Window/AppRegistry";
+import defaultWallpaper from "public/Images/wallpaper.jpg";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+// Register the desktop icon order for fran-desktop specific apps
+registerDesktopApps([
+  "welcome",
+  "terminal",
+  "code-server",
+  "storybook",
+  "linkedin",
+  "github",
+  "doom",
+]);
 
-export function App() {
+function App() {
   return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
-
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
-    </div>
+    <FdeDesktop
+      customApps={userApps}
+      appEntries={userAppEntries}
+      defaultWallpaper={defaultWallpaper}
+      initialApp="welcome"
+      prefetchLoaders={[
+        {
+          id: "dos-emulator",
+          loader: () =>
+            import("@presentation/Components/Apps/DosEmulatorApp/DosEmulatorApp"),
+        },
+      ]}
+    />
   );
 }
 

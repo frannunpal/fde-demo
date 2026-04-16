@@ -1,0 +1,216 @@
+{
+  "sha": "",
+  "folders": ["Desktop", "Documents", "Images", "Games"],
+  "files": [
+    {
+      "name": "CV_2026_EN_v4.pdf",
+      "folder": "Desktop",
+      "mimeType": "application/pdf",
+      "url": "Desktop/CV_2026_EN_v4.pdf"
+    },
+    {
+      "name": "CV_2026_ES_v4.pdf",
+      "folder": "Desktop",
+      "mimeType": "application/pdf",
+      "url": "Desktop/CV_2026_ES_v4.pdf"
+    },
+    {
+      "name": "NotesAppWelcome.md",
+      "folder": "Desktop",
+      "mimeType": "text/markdown",
+      "url": "Desktop/NotesAppWelcome.md"
+    },
+    {
+      "name": "sample-image.png",
+      "folder": "Desktop",
+      "mimeType": "image/png",
+      "url": "Desktop/sample-image.png"
+    },
+    {
+      "name": "wallpaper.jpg",
+      "folder": "Desktop",
+      "mimeType": "image/jpeg",
+      "url": "Desktop/wallpaper.jpg"
+    },
+    {
+      "name": "sample-image.png",
+      "folder": "Images",
+      "mimeType": "image/png",
+      "url": "Images/sample-image.png"
+    },
+    {
+      "name": "wallpaper.jpg",
+      "folder": "Images",
+      "mimeType": "image/jpeg",
+      "url": "Images/wallpaper.jpg"
+    },
+    {
+      "name": "wallpaper2.jpg",
+      "folder": "Images",
+      "mimeType": "image/jpeg",
+      "url": "Images/wallpaper2.jpg"
+    },
+    {
+      "name": "Quick Start – React.pdf",
+      "folder": "Documents",
+      "mimeType": "application/pdf",
+      "url": "Documents/Quick Start – React.pdf"
+    },
+    {
+      "name": "Architecture.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/architecture.md"
+    },
+    {
+      "name": "Folder-Structure.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/folder-structure.md"
+    },
+    {
+      "name": "Hooks.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/hooks.md"
+    },
+    {
+      "name": "README.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/README.md"
+    },
+    {
+      "name": "How-to-Create-an-App.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/how-to-create-an-app.md"
+    },
+    {
+      "name": "How-to-Add-Menubar-and-File-Picker.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/how-to-add-menubar-and-file-picker-to-an-app.md"
+    },
+    {
+      "name": "I18n.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/i18n.md"
+    },
+    {
+      "name": "Adding-Games-to-DOS-Emulator.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/adding-games-to-dos-emulator.md"
+    },
+    {
+      "name": "Custom-Apps.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/custom-apps.md"
+    },
+    {
+      "name": "Terminal-App.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/terminal-app.md"
+    },
+    {
+      "name": "NPM-Package.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/npm-package.md"
+    },
+    {
+      "name": "Runtime-Flags.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/runtime-flags.md"
+    },
+    {
+      "name": "Server-API.md",
+      "folder": "Documents",
+      "mimeType": "text/markdown",
+      "url": "Documents/server-api.md"
+    },
+    {
+      "name": "README.md",
+      "folder": "Documents/npm",
+      "mimeType": "text/markdown",
+      "url": "Documents/npm/README.md"
+    },
+    {
+      "name": "API-Reference.md",
+      "folder": "Documents/npm",
+      "mimeType": "text/markdown",
+      "url": "Documents/npm/api-reference.md"
+    },
+    {
+      "name": "Getting-Started.md",
+      "folder": "Documents/npm",
+      "mimeType": "text/markdown",
+      "url": "Documents/npm/getting-started.md"
+    },
+    {
+      "name": "README.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/README.md"
+    },
+    {
+      "name": "Architecture.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/architecture.md"
+    },
+    {
+      "name": "Development.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/development.md"
+    },
+    {
+      "name": "Production.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/production.md"
+    },
+    {
+      "name": "Publishing.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/publishing.md"
+    },
+    {
+      "name": "Apps-Development.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/apps-development.md"
+    },
+    {
+      "name": "Testing.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/testing.md"
+    },
+    {
+      "name": "Troubleshooting.md",
+      "folder": "Documents/docker",
+      "mimeType": "text/markdown",
+      "url": "Documents/docker/troubleshooting.md"
+    },
+    {
+      "name": "Testing.md",
+      "folder": "Documents/testing",
+      "mimeType": "text/markdown",
+      "url": "Documents/testing/testing.md"
+    },
+    {
+      "name": "DOOM.jsdos",
+      "folder": "Games",
+      "mimeType": "application/jsdos",
+      "url": "Games/doom.jsdos"
+    }
+  ]
+}
