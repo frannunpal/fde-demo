@@ -11,6 +11,8 @@ import {
 } from "fs";
 import { createHash } from "crypto";
 
+const __dirname = import.meta.dirname;
+
 const pkg = JSON.parse(
   readFileSync(resolve(__dirname, "package.json"), "utf-8"),
 ) as {
