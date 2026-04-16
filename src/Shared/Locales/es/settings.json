@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "wallpaper": {
+      "label": "Fondo de pantalla",
+      "description": "Cambia la imagen de fondo del escritorio."
+    },
+    "appearance": {
+      "label": "Apariencia",
+      "description": "Cambia entre modo claro y oscuro."
+    },
+    "launcher": {
+      "label": "Lanzador",
+      "description": "Elige el icono del botón del lanzador."
+    },
+    "font": {
+      "label": "Fuente",
+      "description": "Selecciona la familia de fuentes del sistema."
+    },
+    "reset": {
+      "label": "Restablecer",
+      "description": "Restaura todos los ajustes y datos a sus valores por defecto."
+    },
+    "language": {
+      "label": "Idioma",
+      "description": "Elige tu idioma preferido."
+    }
+  },
+  "wallpaper": {
+    "title": "Fondo de pantalla",
+    "wallpaperType": "Tipo de fondo",
+    "staticImage": "Imagen estática",
+    "chooseFromImages": "Elegir de imágenes",
+    "uploadFromDisk": "Subir desde disco",
+    "resetToDefault": "Restablecer por defecto",
+    "orEnterUrl": "O introduce una URL",
+    "wallpaperPreview": "Vista previa del fondo",
+    "gradient": "Degradado",
+    "gradientType": "Tipo de degradado",
+    "gradientPreset": "Preset",
+    "gradientPosition": "Posición {index}",
+    "addColor": "Añadir color",
+    "removeColor": "Quitar",
+    "linear": "Lineal",
+    "radial": "Radial",
+    "conic": "Cónico",
+    "angle": "Ángulo",
+    "gradientPreview": "Vista previa del degradado",
+    "addNoise": "Añadir textura de ruido",
+    "noiseOpacity": "Opacidad del ruido"
+  },
+  "appearance": {
+    "title": "Apariencia",
+    "description": "Elige si el escritorio usa un tema claro u oscuro, o sigue la preferencia del sistema.",
+    "taskbar": "Barra de tareas",
+    "window": "Ventana",
+    "accent": "Acento",
+    "animationDuration": "Duración de animación",
+    "animationDescription": "Controla la velocidad de las animaciones de abrir/cerrar ventanas (0.1s - 1.0s), debes guardar para ver los cambios."
+  },
+  "font": {
+    "title": "Fuente",
+    "description": "Cambia la fuente en toda la interfaz del escritorio. Las fuentes deben descargarse antes de usar.",
+    "download": "Descargar",
+    "fontSize": "Tamaño de fuente",
+    "downloadByName": "Descargar una fuente por nombre",
+    "fromGoogleFonts": "(Desde Google Fonts)",
+    "downloadError": "La fuente no se descargó correctamente. Intenta de nuevo con el nombre correcto",
+    "downloadSuccess": "Descargada correctamente.",
+    "systemDefault": "Sistema por defecto"
+  },
+  "reset": {
+    "title": "Restablecer",
+    "description": "Restaura todos los ajustes y datos a sus valores por defecto. Esta acción no se puede deshacer.",
+    "resetButton": "⚠️ ¿Restablecer la app?",
+    "modalTitle": "¿Estás seguro?",
+    "modalDescription": "Esto borrará todos tus datos y ajustes.",
+    "goBack": "¡Por favor vuelve atrás! 🙏",
+    "burnEverything": "¡Sí, quémalo todo! 🔥",
+    "keepFiles": "Sí, pero mantener mis archivos"
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Selecciona tu idioma preferido para la interfaz del escritorio.",
+    "selectPlaceholder": "Selecciona idioma",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "all": "Todos los ajustes"
+}

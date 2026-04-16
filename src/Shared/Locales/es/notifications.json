@@ -1,0 +1,11 @@
+{
+  "empty": {
+    "title": "No hay notificaciones nuevas",
+    "message": "Por ahora"
+  },
+  "taskbar": {
+    "showNotifications": "Mostrar notificaciones",
+    "hideNotifications": "Ocultar notificaciones",
+    "clock": "reloj"
+  }
+}

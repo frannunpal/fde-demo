@@ -1,0 +1,104 @@
+{
+  "actions": {
+    "save": "Guardar",
+    "saveAs": "Guardar como",
+    "cancel": "Cancelar",
+    "ok": "Aceptar",
+    "open": "Abrir",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "create": "Crear",
+    "new": "Nuevo",
+    "exit": "Salir",
+    "apply": "Aplicar",
+    "discard": "Descartar",
+    "reset": "Restablecer",
+    "download": "Descargar",
+    "upload": "Subir",
+    "copy": "Copiar",
+    "cut": "Cortar",
+    "paste": "Pegar",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "createFolder": "Crear carpeta",
+    "createFile": "Crear nuevo archivo",
+    "select": "Seleccionar"
+  },
+  "buttons": {
+    "minimize": "Minimizar",
+    "maximize": "Maximizar",
+    "restore": "Restaurar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No",
+    "confirm": "Confirmar",
+    "continue": "Continuar"
+  },
+  "labels": {
+    "name": "Nombre",
+    "title": "Título",
+    "filename": "Nombre de archivo",
+    "url": "URL",
+    "file": "Archivo",
+    "folder": "Carpeta",
+    "home": "Inicio",
+    "type": "Tipo",
+    "loading": "Cargando...",
+    "search": "Buscar",
+    "searchIcons": "Buscar iconos...",
+    "unsavedChanges": "Cambios sin guardar",
+    "unsaved": "Cambios sin guardar",
+    "workInProgress": "Trabajo en progreso"
+  },
+  "messages": {
+    "areYouSure": "¿Estás seguro?",
+    "cannotBeUndone": "Esta acción no se puede deshacer.",
+    "noFileSelected": "Ningún archivo seleccionado",
+    "folderEmpty": "Esta carpeta está vacía",
+    "noMatchingFiles": "No hay archivos coincidentes",
+    "noSubfolders": "Sin subcarpetas",
+    "replaceFile": "¿Reemplazar archivo?",
+    "replaceFileMessage": "Ya existe un archivo llamado \"{{name}}\". ¿Deseas reemplazarlo?",
+    "yesReplace": "Sí, reemplazar",
+    "forBetterExperience": "Para una mejor experiencia usa esta aplicación en modo escritorio u horizontal",
+    "turnYourDevice": "Gira tu dispositivo",
+    "continueVertically": "¿Continuar verticalmente?"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "custom": "Personalizado",
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
+  },
+  "status": {
+    "error": "error",
+    "success": "éxito"
+  },
+  "menu": {
+    "file": "Archivo",
+    "edit": "Editar",
+    "view": "Ver"
+  },
+  "filePicker": {
+    "folderTreeAria": "Árbol de carpetas",
+    "filesAria": "Archivos",
+    "foldersAria": "Carpetas",
+    "cancelAria": "Cancelar",
+    "openSelectedAria": "Abrir archivo seleccionado",
+    "fileNameAria": "Nombre de archivo"
+  },
+  "externalLink": {
+    "securityMessage": "bloquea la incrustación en iframes por razones de seguridad.",
+    "goToProfile": "Haz clic abajo para ir a mi perfil de {{name}}."
+  },
+  "taskbar": {
+    "ariaLabel": "Barra de tareas"
+  },
+  "launcher": {
+    "label": "Lanzador",
+    "ariaLabel": "Lanzador de aplicaciones",
+    "selectedIcon": "Seleccionado: {{icon}}"
+  }
+}

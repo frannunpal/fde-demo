@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skillItem {
+  width: 100%;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.progressRoot {
+  background-color: var(--mantine-color-gray-2);
+}
+
+:global([data-mantine-color-scheme='dark']) .progressRoot {
+  background-color: var(--mantine-color-dark-4);
+}
+
+.progressSection {
+  background: linear-gradient(
+    90deg,
+    var(--mantine-primary-color-filled) 0%,
+    var(--mantine-primary-color-light) 100%
+  );
+}

@@ -1,0 +1,13 @@
+{
+  "newFolder": "Nueva Carpeta",
+  "predefined": "Predefinida",
+  "rename": "Renombrar",
+  "delete": "Eliminar",
+  "predefinedFolders": "Carpetas Predefinidas",
+  "customFolders": "Carpetas Personalizadas",
+  "availableApps": "Apps Disponibles (arrastrar y soltar para añadir a carpetas)",
+  "clickToAdd": "Clic para añadir a la primera carpeta personalizada",
+  "addFolder": "Añadir carpeta",
+  "instructions": "Clic derecho en una app dentro de una carpeta para eliminarla. Clic en una app disponible para añadirla a la primera carpeta personalizada.",
+  "canCreateNewFolder": "Puedes crear una nueva carpeta si lo necesitas."
+}

@@ -1,0 +1,29 @@
+{
+  "window": {
+    "title": "Window",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close",
+    "ariaLabels": {
+      "minimize": "Minimize",
+      "maximize": "Maximize",
+      "restore": "Restore",
+      "close": "Close"
+    }
+  },
+  "unsavedModal": {
+    "title": "Unsaved Changes",
+    "message": "You have unsaved changes. What would you like to do?",
+    "dontSave": "Don't Save",
+    "save": "Save"
+  },
+  "fileDialog": {
+    "openFile": "Open file",
+    "saveFile": "Save file",
+    "selectFile": "Select file {{name}}",
+    "openFolder": "Open folder {{name}}",
+    "selectFolder": "Select folder",
+    "filename": "filename.md"
+  }
+}

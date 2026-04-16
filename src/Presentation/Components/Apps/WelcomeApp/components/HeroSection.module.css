@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.avatar {
+  background: linear-gradient(
+    135deg,
+    var(--mantine-primary-color-filled) 0%,
+    var(--mantine-primary-color-light) 100%
+  );
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.links {
+  gap: 0.5rem;
+}
+
+.iconLink {
+  color: var(--mantine-color-dimmed);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLink:hover {
+  color: var(--mantine-primary-color-filled);
+}
+
+.actions {
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

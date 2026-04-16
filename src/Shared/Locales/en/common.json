@@ -1,0 +1,104 @@
+{
+  "actions": {
+    "save": "Save",
+    "saveAs": "Save As",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "open": "Open",
+    "close": "Close",
+    "delete": "Delete",
+    "create": "Create",
+    "new": "New",
+    "exit": "Exit",
+    "apply": "Apply",
+    "discard": "Discard",
+    "reset": "Reset",
+    "download": "Download",
+    "upload": "Upload",
+    "copy": "Copy",
+    "cut": "Cut",
+    "paste": "Paste",
+    "undo": "Undo",
+    "redo": "Redo",
+    "createFolder": "Create folder",
+    "createFile": "Create new file",
+    "select": "Select"
+  },
+  "buttons": {
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "continue": "Continue"
+  },
+  "labels": {
+    "name": "Name",
+    "title": "Title",
+    "filename": "Filename",
+    "url": "URL",
+    "file": "File",
+    "folder": "Folder",
+    "home": "Home",
+    "type": "Type",
+    "loading": "Loading...",
+    "search": "Search",
+    "searchIcons": "Search icons...",
+    "unsavedChanges": "Unsaved Changes",
+    "unsaved": "Unsaved changes",
+    "workInProgress": "Work In Progress"
+  },
+  "messages": {
+    "areYouSure": "Are you sure?",
+    "cannotBeUndone": "This action cannot be undone.",
+    "noFileSelected": "No file selected",
+    "folderEmpty": "This folder is empty",
+    "noMatchingFiles": "No matching files",
+    "noSubfolders": "No subfolders",
+    "replaceFile": "Replace file?",
+    "replaceFileMessage": "A file named \"{{name}}\" already exists. Do you want to replace it?",
+    "yesReplace": "Yes, replace",
+    "forBetterExperience": "For a better experience use this app desktop OR horizontal mode",
+    "turnYourDevice": "Turn your device",
+    "continueVertically": "Continue vertically?"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "custom": "Custom",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "status": {
+    "error": "error",
+    "success": "success"
+  },
+  "menu": {
+    "file": "File",
+    "edit": "Edit",
+    "view": "View"
+  },
+  "filePicker": {
+    "folderTreeAria": "Folder tree",
+    "filesAria": "Files",
+    "foldersAria": "Folders",
+    "cancelAria": "Cancel",
+    "openSelectedAria": "Open selected file",
+    "fileNameAria": "File name"
+  },
+  "externalLink": {
+    "securityMessage": "blocks embedding in iframes for security reasons.",
+    "goToProfile": "Click below to go to my {{name}} profile."
+  },
+  "taskbar": {
+    "ariaLabel": "Taskbar"
+  },
+  "launcher": {
+    "label": "Launcher",
+    "ariaLabel": "App launcher",
+    "selectedIcon": "Selected: {{icon}}"
+  }
+}

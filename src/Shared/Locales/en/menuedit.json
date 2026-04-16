@@ -1,0 +1,14 @@
+{
+  "title": "Edit Launcher",
+  "newFolder": "New Folder",
+  "predefined": "Predefined",
+  "rename": "Rename",
+  "delete": "Delete",
+  "predefinedFolders": "Predefined Folders",
+  "customFolders": "Custom Folders",
+  "availableApps": "Available Apps (drag and drop to add to folder)",
+  "clickToAdd": "Click to add to first custom folder",
+  "addFolder": "Add folder",
+  "instructions": "Right-click an app in a folder to remove it. Click an available app to add it to the first custom folder.",
+  "canCreateNewFolder": "You can create new folders if needed."
+}

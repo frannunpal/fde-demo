@@ -1,0 +1,29 @@
+{
+  "window": {
+    "title": "Ventana",
+    "minimize": "Minimizar",
+    "maximize": "Maximizar",
+    "restore": "Restaurar",
+    "close": "Cerrar",
+    "ariaLabels": {
+      "minimize": "Minimizar",
+      "maximize": "Maximizar",
+      "restore": "Restaurar",
+      "close": "Cerrar"
+    }
+  },
+  "unsavedModal": {
+    "title": "Cambios sin guardar",
+    "message": "Tienes cambios sin guardar. ¿Qué deseas hacer?",
+    "dontSave": "No guardar",
+    "save": "Guardar"
+  },
+  "fileDialog": {
+    "openFile": "Abrir archivo",
+    "saveFile": "Guardar archivo",
+    "selectFile": "Seleccionar archivo {{name}}",
+    "openFolder": "Abrir carpeta {{name}}",
+    "selectFolder": "Seleccionar carpeta",
+    "filename": "nombre.md"
+  }
+}

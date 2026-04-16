@@ -1,0 +1,134 @@
+{
+  "names": {
+    "notepad": "Notepad",
+    "terminal": "Terminal",
+    "filesApp": "Files",
+    "files": "Files",
+    "uploader": "Uploader",
+    "settings": "Settings",
+    "pdfViewer": "PDF Viewer",
+    "calendar": "Calendar",
+    "storybook": "Storybook",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "imageViewer": "Image Viewer",
+    "dosEmulator": "DOS Emulator",
+    "doom": "DOOM",
+    "deviceInfo": "Device Info",
+    "welcome": "Welcome",
+    "menuedit": "Edit Launcher",
+    "codeServer": "VS Code"
+  },
+  "folders": {
+    "socialLinks": "Social Links",
+    "office": "Office and media",
+    "programming": "Programming",
+    "games": "Games",
+    "customApps": "Custom Apps"
+  },
+  "descriptions": {
+    "notepad": "Markdown editor with rich text toolbar",
+    "terminal": "Terminal emulator",
+    "filesApp": "File explorer",
+    "settings": "System settings",
+    "pdfViewer": "PDF document viewer",
+    "calendar": "Calendar view",
+    "storybook": "Storybook playground",
+    "linkedin": "LinkedIn profile link",
+    "github": "GitHub profile link",
+    "imageViewer": "Image viewer with file picker",
+    "dosEmulator": "DOS game and program emulator",
+    "doom": "Play the classic DOOM game"
+  },
+  "launcher": {
+    "label": "Launcher",
+    "ariaLabel": "App launcher"
+  },
+  "imageViewer": {
+    "noImage": "No image to display. Please open one.",
+    "fitToWindow": "Fit to window",
+    "zoom": "Zoom"
+  },
+  "pdf": {
+    "viewer": "PDF viewer"
+  },
+  "dosEmulator": {
+    "noBundle": "No DOS program loaded. Open a .jsdos bundle to start.",
+    "loading": "Loading DOS emulator...",
+    "controls": {
+      "pause": "Pause",
+      "resume": "Resume",
+      "restart": "Restart",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "fullscreen": "Fullscreen"
+    },
+    "menu": {
+      "file": "File",
+      "open": "Open Bundle",
+      "restart": "Restart",
+      "exit": "Exit",
+      "emulation": "Emulation",
+      "pause": "Pause",
+      "resume": "Resume",
+      "audio": "Audio",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "volume": "Volume"
+    },
+    "errors": {
+      "failedToLoad": "Failed to load DOS bundle",
+      "notSupported": "DOS emulation is not supported in this browser"
+    }
+  },
+  "uploader": {
+    "clickToUpload": "Click here to upload",
+    "selectDestination": "Select destination folder",
+    "fileInfo": "File: {{name}} ({{size}})",
+    "uploading": "Uploading...",
+    "uploadProgress": "Upload progress",
+    "uploadComplete": "Upload complete!",
+    "uploadFailed": "Upload wasn't successful for the following reason",
+    "readyToUpload": "Ready to upload",
+    "showFile": "Show in Files",
+    "openFile": "Open file",
+    "upload": "Upload",
+    "stepSelect": "Select",
+    "stepDestination": "Destination",
+    "stepUpload": "Upload",
+    "stepDone": "Done",
+    "folderSelected": "Folder selected",
+    "uploadTo": "Destination",
+    "uploadToRoot": "Uploading to root folder"
+  },
+  "terminal": {
+    "notAvailable": "Terminal Not Available",
+    "notAvailableMessage": "The terminal cannot be used because this environment does not currently allow terminal access.",
+    "dockerRequired": "Please run in Docker mode to use the terminal.",
+    "offlineTitle": "Terminal Unavailable",
+    "offlineMessage": "The terminal requires a Docker environment to function. It connects directly to the container's shell.",
+    "offlineInstructions": "To use the terminal, run the application in Docker mode:",
+    "dockerCommand": "docker compose up dev",
+    "openWelcome": "Open Welcome App",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "connectionError": "Connection error",
+    "menu": {
+      "edit": "Edit",
+      "copy": "Copy",
+      "paste": "Paste",
+      "clear": "Clear",
+      "reset": "Reset",
+      "reconnect": "Reconnect",
+      "exit": "Exit"
+    },
+    "scrollback": "Lines",
+    "shell": "Shell"
+  },
+  "codeServer": {
+    "notAvailable": "VS Code Not Available",
+    "notAvailableMessage": "VS Code (code-server) cannot be used in browser mode.",
+    "dockerRequired": "Please run in Docker to use VS Code."
+  }
+}

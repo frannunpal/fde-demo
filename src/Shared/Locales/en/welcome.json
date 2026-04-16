@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Fullstack Developer & DevOps",
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me"
+  },
+  "skills": {
+    "technical": "Technical Skills",
+    "soft": "Soft Skills"
+  },
+  "experience": "Professional Experience",
+  "techStack": "Tech Stack",
+  "languages": "Languages"
+}

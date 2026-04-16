@@ -1,0 +1,9 @@
+.container {
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--mantine-color-body);
+}
+
+:global([data-mantine-color-scheme='dark']) .container {
+  background-color: var(--mantine-color-dark-7);
+}

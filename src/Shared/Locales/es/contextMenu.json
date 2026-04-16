@@ -1,0 +1,47 @@
+{
+  "window": {
+    "minimize": "Minimizar",
+    "restore": "Restaurar",
+    "maximize": "Maximizar",
+    "close": "Cerrar ventana"
+  },
+  "actions": {
+    "cut": "Cortar",
+    "copy": "Copiar",
+    "paste": "Pegar",
+    "pasteItems": "Pegar ({{count}} elementos)",
+    "delete": "Eliminar",
+    "createFolder": "Crear carpeta",
+    "createFile": "Crear nuevo archivo"
+  },
+  "createItem": {
+    "folderTitle": "Crear Carpeta",
+    "fileTitle": "Crear Archivo",
+    "newFolder": "Nueva Carpeta",
+    "newFile": "Nuevo Archivo",
+    "nameError": "Ya existe un {{mode}} con ese nombre",
+    "clearNameAria": "Limpiar nombre",
+    "customIcon": "Elige icono o color personalizado",
+    "colorError": "Introduce un color hexadecimal válido (ej. #ff0000)",
+    "changeLater": "Puedes cambiar el icono más tarde en las propiedades de la carpeta."
+  },
+  "deleteConfirm": {
+    "title": "¿Eliminar \"{{name}}\"?",
+    "message": "¿Estás seguro de que quieres eliminar \"{{name}}\"? Esta acción no se puede deshacer."
+  },
+  "app": {
+    "open": "Abrir {{name}}",
+    "toggleTheme": "Cambiar Tema"
+  },
+  "sort": {
+    "title": "Ordenar Iconos",
+    "default": "Por defecto",
+    "nameAsc": "Nombre (A-Z)",
+    "nameDesc": "Nombre (Z-A)",
+    "byType": "Por Tipo"
+  },
+  "launcher": {
+    "title": "Launcher",
+    "editLauncher": "Editar Launcher"
+  }
+}

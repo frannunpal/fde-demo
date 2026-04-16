@@ -1,0 +1,17 @@
+:root {
+  /* Translucent surface colors */
+  --color-surface-hover: rgba(255, 255, 255, 0.15);
+  --color-surface-active: rgba(255, 255, 255, 0.28);
+  --color-surface-subtle: rgba(128, 128, 128, 0.08);
+  --color-surface-border: rgba(128, 128, 128, 0.15);
+  --color-surface-border-strong: rgba(128, 128, 128, 0.2);
+
+  /* Border radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-bg: background 0.15s;
+
+}

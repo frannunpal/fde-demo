@@ -1,0 +1,17 @@
+{
+  "toolbar": {
+    "formatting": "Formato de texto",
+    "bold": "Negrita",
+    "italic": "Cursiva",
+    "strikethrough": "Tachado",
+    "inlineCode": "Código en línea",
+    "heading1": "Título 1",
+    "heading2": "Título 2",
+    "bulletList": "Lista con viñetas",
+    "orderedList": "Lista ordenada",
+    "blockquote": "Cita",
+    "codeBlock": "Bloque de código",
+    "horizontalRule": "Línea horizontal"
+  },
+  "untitled": "sin-titulo.md"
+}

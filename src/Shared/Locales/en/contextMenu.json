@@ -1,0 +1,47 @@
+{
+  "window": {
+    "minimize": "Minimize",
+    "restore": "Restore",
+    "maximize": "Maximize",
+    "close": "Close window"
+  },
+  "actions": {
+    "cut": "Cut",
+    "copy": "Copy",
+    "paste": "Paste",
+    "pasteItems": "Paste ({{count}} items)",
+    "delete": "Delete",
+    "createFolder": "Create folder",
+    "createFile": "Create new file"
+  },
+  "createItem": {
+    "folderTitle": "Create Folder",
+    "fileTitle": "Create File",
+    "newFolder": "New Folder",
+    "newFile": "New File",
+    "nameError": "There is already a {{mode}} with that name",
+    "clearNameAria": "Clear name",
+    "customIcon": "Choose custom icon or color",
+    "colorError": "Enter a valid hex color (e.g. #ff0000)",
+    "changeLater": "You can change the icon later in folder properties."
+  },
+  "deleteConfirm": {
+    "title": "Delete \"{{name}}\"?",
+    "message": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone."
+  },
+  "app": {
+    "open": "Open {{name}}",
+    "toggleTheme": "Toggle Theme"
+  },
+  "sort": {
+    "title": "Sort Icons",
+    "default": "Default",
+    "nameAsc": "Name (A-Z)",
+    "nameDesc": "Name (Z-A)",
+    "byType": "By Type"
+  },
+  "launcher": {
+    "title": "Launcher",
+    "editLauncher": "Edit Launcher"
+  }
+}

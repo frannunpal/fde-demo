@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  transform: rotate(-90deg);
+}
+
+.background {
+  fill: none;
+  stroke: var(--mantine-color-gray-3);
+}
+
+:global([data-mantine-color-scheme='dark']) .background {
+  stroke: var(--mantine-color-dark-4);
+}
+
+.progress {
+  fill: none;
+  stroke: var(--mantine-primary-color-filled);
+  stroke-linecap: round;
+}
+
+.value {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.label {
+  position: absolute;
+  bottom: -1.5rem;
+  font-size: 0.75rem;
+  color: var(--mantine-color-dimmed);
+  text-align: center;
+  white-space: nowrap;
+}

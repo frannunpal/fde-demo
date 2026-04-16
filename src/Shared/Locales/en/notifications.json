@@ -1,0 +1,11 @@
+{
+  "empty": {
+    "title": "There are no new notifications",
+    "message": "For now"
+  },
+  "taskbar": {
+    "showNotifications": "Show notifications",
+    "hideNotifications": "Hide notifications",
+    "clock": "clock"
+  }
+}

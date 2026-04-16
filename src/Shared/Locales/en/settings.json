@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "wallpaper": {
+      "label": "Wallpaper",
+      "description": "Change the desktop background image."
+    },
+    "appearance": {
+      "label": "Appearance",
+      "description": "Switch between light and dark mode."
+    },
+    "launcher": {
+      "label": "Launcher",
+      "description": "Choose the launcher button icon."
+    },
+    "font": {
+      "label": "Font",
+      "description": "Select the system font family."
+    },
+    "reset": {
+      "label": "Reset to Default",
+      "description": "Reset all settings and data to defaults."
+    },
+    "language": {
+      "label": "Language",
+      "description": "Choose your preferred language."
+    }
+  },
+  "wallpaper": {
+    "title": "Wallpaper",
+    "wallpaperType": "Wallpaper Type",
+    "staticImage": "Static Image",
+    "chooseFromImages": "Choose from Images",
+    "uploadFromDisk": "Upload from disk",
+    "resetToDefault": "Reset to default",
+    "orEnterUrl": "Or enter a URL",
+    "wallpaperPreview": "Wallpaper preview",
+    "gradient": "Gradient",
+    "gradientType": "Gradient Type",
+    "gradientPreset": "Preset",
+    "gradientPosition": "Position {index}",
+    "addColor": "Add color",
+    "removeColor": "Remove",
+    "linear": "Linear",
+    "radial": "Radial",
+    "conic": "Conic",
+    "angle": "Angle",
+    "gradientPreview": "Gradient preview",
+    "addNoise": "Add noise texture",
+    "noiseOpacity": "Noise opacity"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Choose whether the desktop uses a light or dark theme, or follows the system preference.",
+    "taskbar": "Taskbar",
+    "window": "Window",
+    "accent": "Accent",
+    "animationDuration": "Animation Duration",
+    "animationDescription": "Controls the speed of window open/close animations (0.1s - 1.0s) must save to see changes."
+  },
+  "font": {
+    "title": "Font",
+    "description": "Changes the font across the entire desktop interface. Fonts must be downloaded before use.",
+    "download": "Download",
+    "fontSize": "Font Size",
+    "downloadByName": "Download a font by name",
+    "fromGoogleFonts": "(From Google Fonts)",
+    "downloadError": "Font didn't download successfully. Try again with the correct name",
+    "downloadSuccess": "Downloaded successfully.",
+    "systemDefault": "System Default"
+  },
+  "reset": {
+    "title": "Reset to Default",
+    "description": "Reset all settings and data to their default values. This action cannot be undone.",
+    "resetButton": "⚠️ Reset app to defaults?",
+    "modalTitle": "Are you sure?",
+    "modalDescription": "This will erase all your data and settings.",
+    "goBack": "Please go back! 🙏",
+    "burnEverything": "Yes, burn everything! 🔥",
+    "keepFiles": "Yes, but keep my files"
+  },
+  "language": {
+    "title": "Language",
+    "description": "Select your preferred language for the desktop interface.",
+    "selectPlaceholder": "Select language",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "all": "All Settings"
+}

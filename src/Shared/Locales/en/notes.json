@@ -1,0 +1,17 @@
+{
+  "toolbar": {
+    "formatting": "Text formatting",
+    "bold": "Bold",
+    "italic": "Italic",
+    "strikethrough": "Strikethrough",
+    "inlineCode": "Inline code",
+    "heading1": "Heading 1",
+    "heading2": "Heading 2",
+    "bulletList": "Bullet list",
+    "orderedList": "Ordered list",
+    "blockquote": "Blockquote",
+    "codeBlock": "Code block",
+    "horizontalRule": "Horizontal rule"
+  },
+  "untitled": "untitled.md"
+}
