@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve, dirname } from "path";
-import { fileURLToPath } from "url";
+import { resolve } from "path";
 import {
   readFileSync,
   writeFileSync,
@@ -12,13 +11,16 @@ import {
 } from "fs";
 import { createHash } from "crypto";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = import.meta.dirname ?? process.cwd();
 
-const pkg = JSON.parse(
-  readFileSync(resolve(__dirname, "package.json"), "utf-8"),
-) as {
-  version: string;
-};
+let pkg: { version: string } = { version: "0.0.0" };
+try {
+  pkg = JSON.parse(
+    readFileSync(resolve(__dirname, "package.json"), "utf-8"),
+  ) as { version: string };
+} catch {
+  // fallback if package.json is not readable (e.g. CodeSandbox sandboxed FS)
+}
 
 function manifestShaPlugin() {
   return {
@@ -115,8 +117,10 @@ export default defineConfig({
   server: {
     // In Docker, Vite runs on port 3000 (nginx proxies from 5173)
     // In local dev/test, Vite runs directly on port 5173
-    port: process.env.IN_DOCKER === "true" ? 3000 : 5173,
+    // In CodeSandbox, let the environment assign the port
+    port: process.env.IN_DOCKER === "true" ? 3000 : process.env.PORT ? parseInt(process.env.PORT) : 5173,
     host: true,
+    strictPort: false,
     fs: {
       // Allow serving files from dist-apps
       allow: [".."],
