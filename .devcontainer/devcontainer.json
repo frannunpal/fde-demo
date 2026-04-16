@@ -1,0 +1,5 @@
+{
+  "name": "FDE Demo",
+  "image": "node:lts-alpine3.23",
+  "postCreateCommand": "npm i -g bun && bun install"
+}
