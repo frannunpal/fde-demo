@@ -1,5 +1,6 @@
 {
-  "name": "FDE Demo",
-  "image": "oven/bun:alpine",
-  "postCreateCommand": "bun install"
+  "name": "Devcontainer",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  }
 }
