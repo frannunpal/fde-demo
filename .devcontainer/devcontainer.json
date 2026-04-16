@@ -1,5 +1,5 @@
 {
   "name": "FDE Demo",
-  "image": "oven/bun",
-  "postCreateCommand": "bun install & bun run dev"
+  "image": "oven/bun:alpine",
+  "postCreateCommand": "bun install"
 }
