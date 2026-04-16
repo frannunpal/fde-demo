@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/index.ts",
+    "dev": "bun run copy-docs && vite",
     "copy-docs": "mkdir -p public/Documents && cp docs/*.md public/Documents/ 2>/dev/null; for d in docs/*/; do subdir=\"public/Documents/$(basename $d)\"; mkdir -p \"$subdir\" && cp \"$d\"*.md \"$subdir/\" 2>/dev/null; done; true"
   },
   "dependencies": {

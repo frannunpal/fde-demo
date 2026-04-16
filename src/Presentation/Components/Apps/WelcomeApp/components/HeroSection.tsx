@@ -5,7 +5,7 @@ import { Box, Text, Group, Button, Avatar, Image } from "@mantine/core";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { PROFILE } from "@/Shared/Constants/profileData";
 import classes from "./HeroSection.module.css";
-import Yo from "public/Yo.jpg";
+import Yo from "@public/Yo.jpg";
 
 const HeroSection: FC = () => {
   const { t, i18n } = useTranslation("welcome");

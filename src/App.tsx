@@ -3,7 +3,7 @@ import {
   userApps,
   userAppEntries,
 } from "@presentation/Components/Window/AppRegistry";
-import defaultWallpaper from "public/Images/wallpaper.jpg";
+import defaultWallpaper from "@public/Images/wallpaper.jpg";
 
 // Register the desktop icon order for fran-desktop specific apps
 registerDesktopApps([
