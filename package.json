@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun run copy-docs && vite",
+    "dev": "bun run copy-docs && bunx --bun vite",
     "copy-docs": "mkdir -p public/Documents && cp docs/*.md public/Documents/ 2>/dev/null; for d in docs/*/; do subdir=\"public/Documents/$(basename $d)\"; mkdir -p \"$subdir\" && cp \"$d\"*.md \"$subdir/\" 2>/dev/null; done; true"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "storybook": "10.3.3",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.58.1",
-    "vite": "6.4.2",
+    "vite": "^8.0.8",
     "vite-plugin-css-injected-by-js": "^4.0.1",
     "vitest": "^4.1.4"
   }
