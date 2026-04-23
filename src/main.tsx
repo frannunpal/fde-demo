@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './index.css';
 import '@fde-desktop/fde-core';
+import '@fde-desktop/fde-core/dist/index.css';
 import '@presentation/Components/Window/AppRegistry';
 import App from './App.tsx';
 
