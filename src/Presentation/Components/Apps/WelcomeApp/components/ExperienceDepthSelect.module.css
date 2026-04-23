@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  padding: var(--mantine-spacing-sm) 0;
+}
+
+.card {
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.logoSection {
+  min-width: 120px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoOverlay {
+  background: var(--mantine-color-body);
+  padding: var(--mantine-spacing-xs);
+  border-radius: var(--mantine-radius-sm);
+  opacity: 0.95;
+}

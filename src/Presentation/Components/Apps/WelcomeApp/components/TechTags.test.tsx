@@ -3,7 +3,7 @@ import '@/Shared/Testing/__mocks__/jsdom-setup';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import TechTags from './TechTags';
-import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils/renderWithMantine';
+import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils';
 
 vi.mock('framer-motion', () => ({
   motion: {
@@ -19,9 +19,14 @@ vi.mock('framer-motion', () => ({
 }));
 
 describe('TechTags', () => {
-  const mockTags = ['React', 'TypeScript', 'Node.js', 'Kubernetes'];
+  const mockTags = [
+    { name: 'React', url: 'https://react.dev' },
+    { name: 'TypeScript', url: 'https://www.typescriptlang.org' },
+    { name: 'Node.js', url: 'https://nodejs.org/en' },
+    { name: 'Kubernetes', url: 'https://kubernetes.io' },
+  ];
 
-  it('renders all tags', () => {
+  it('renders all tag names', () => {
     render(<TechTags tags={mockTags} />, { wrapper });
 
     expect(screen.getByText('React')).toBeInTheDocument();
@@ -30,10 +35,19 @@ describe('TechTags', () => {
     expect(screen.getByText('Kubernetes')).toBeInTheDocument();
   });
 
-  it('renders tags as badges', () => {
+  it('renders tags as links with correct href', () => {
     render(<TechTags tags={mockTags} />, { wrapper });
 
-    const badges = screen.getAllByText(/React|TypeScript|Node.js|Kubernetes/);
-    expect(badges).toHaveLength(4);
+    const reactLink = screen.getByText('React').closest('a');
+    expect(reactLink).toHaveAttribute('href', 'https://react.dev');
+    expect(reactLink).toHaveAttribute('target', '_blank');
+    expect(reactLink).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+
+  it('renders correct number of tags', () => {
+    render(<TechTags tags={mockTags} />, { wrapper });
+
+    const links = screen.getAllByRole('link');
+    expect(links).toHaveLength(4);
   });
 });

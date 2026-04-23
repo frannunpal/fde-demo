@@ -1,27 +1,19 @@
-import { vi } from 'vitest';
-
-export const createLocalStorageMock = (): Storage => {
-  let store: Record<string, string> = {};
-
-  const mock = {
+export const createLocalStorageMock = () => {
+  const store: Record<string, string> = {};
+  return {
+    getItem: (key: string) => store[key] ?? null,
+    setItem: (key: string, value: string) => {
+      store[key] = value;
+    },
+    removeItem: (key: string) => {
+      delete store[key];
+    },
+    clear: () => {
+      Object.keys(store).forEach(key => delete store[key]);
+    },
     get length() {
       return Object.keys(store).length;
     },
-    key: vi.fn((index: number) => {
-      const keys = Object.keys(store);
-      return keys[index] ?? null;
-    }),
-    getItem: vi.fn((key: string) => store[key] ?? null),
-    setItem: vi.fn((key: string, value: string) => {
-      store[key] = value;
-    }),
-    removeItem: vi.fn((key: string) => {
-      delete store[key];
-    }),
-    clear: vi.fn(() => {
-      store = {};
-    }),
+    key: (index: number) => Object.keys(store)[index] ?? null,
   };
-
-  return mock as unknown as Storage;
 };

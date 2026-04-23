@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import LinkedinApp from './LinkedinApp';
-import { makeWindow } from '@/Shared/Testing/Utils/makeWindow';
-import AppWithPickerOpen from '@/Shared/Testing/Utils/AppWithPickerOpen';
+import { makeWindow } from '@/Shared/Testing/Utils';
+import AppWithPickerOpen from '@fde-desktop/fde-core-test/Utils/AppWithPickerOpen';
 
 const meta: Meta<typeof LinkedinApp> = {
   title: 'Apps/LinkedinApp',

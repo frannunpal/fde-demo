@@ -3,7 +3,7 @@ import { Window } from '@fde-desktop/fde-core';
 import { WindowButtonRegistryProvider } from '@fde-desktop/fde-core';
 import { useDesktopStore } from '@fde-desktop/fde-core';
 import type { WindowEntity } from '@fde-desktop/fde-core';
-import type { FSNode } from '@/Shared/Types/FileSystemTypes';
+import type { FSNode } from '@fde-desktop/fde-core';
 
 export interface AppWithPickerOpenProps {
   win: WindowEntity;

@@ -2,8 +2,7 @@
 import '@/Shared/Testing/__mocks__/jsdom-setup';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils/renderWithMantine';
-import { createMockWindowEntity } from '@/Shared/Testing/Utils/makeWindowEntity';
+import { renderWithMantine as wrapper, createMockWindowEntity } from '@/Shared/Testing/Utils';
 
 vi.mock('framer-motion', async () => await import('@/Shared/Testing/__mocks__/framer-motion.mock'));
 

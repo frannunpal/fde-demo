@@ -29,7 +29,6 @@ global.ResizeObserver = class ResizeObserver {
   disconnect() {}
 };
 
-// Window-dependent mocks - run after jsdom environment is ready
 if (typeof window !== 'undefined') {
   Object.defineProperty(window, 'matchMedia', {
     writable: true,

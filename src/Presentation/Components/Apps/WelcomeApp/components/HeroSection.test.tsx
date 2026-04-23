@@ -1,9 +1,9 @@
 // @vitest-environment jsdom
 import '@/Shared/Testing/__mocks__/jsdom-setup';
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import HeroSection from './HeroSection';
-import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils/renderWithMantine';
+import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils';
 
 const mockOpen = vi.fn();
 
@@ -13,6 +13,12 @@ vi.stubGlobal('window', {
   removeEventListener: vi.fn(),
   open: mockOpen,
 });
+
+vi.mock('unicode-animations', () => ({
+  spinners: {
+    pulse: { frames: ['⠀⠶⠀', '⠀⠿⠀'], interval: 180 },
+  },
+}));
 
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
@@ -24,10 +30,9 @@ vi.mock('react-i18next', () => ({
       };
       return translations[key] || key;
     },
-    i18n: {
-      language: 'en',
-    },
+    i18n: { language: 'en' },
   }),
+  initReactI18next: { type: '3rdParty', init: vi.fn() },
 }));
 
 vi.mock('framer-motion', () => ({
@@ -45,8 +50,13 @@ vi.mock('framer-motion', () => ({
 
 describe('HeroSection', () => {
   beforeEach(() => {
+    vi.useFakeTimers();
     vi.clearAllMocks();
     (window as unknown as Record<string, unknown>).location = { href: '' };
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
   });
 
   it('renders profile name', () => {
@@ -105,5 +115,13 @@ describe('HeroSection', () => {
     fireEvent.click(contactButton);
 
     expect((window as unknown as Record<string, unknown>).location).toHaveProperty('href');
+  });
+
+  it('renders the unicode animation background', () => {
+    render(<HeroSection />, { wrapper });
+
+    const bg = document.querySelector('[aria-hidden="true"]');
+    expect(bg).toBeInTheDocument();
+    expect(bg?.textContent).toBe('⠀⠶⠀');
   });
 });

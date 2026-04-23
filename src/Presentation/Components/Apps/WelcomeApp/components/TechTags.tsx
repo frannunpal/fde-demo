@@ -1,40 +1,40 @@
 import { type FC } from 'react';
 import { motion } from 'framer-motion';
 import { Badge, Group } from '@mantine/core';
+import { staggerContainer, staggerChild } from '../motionVariants';
 import classes from './TechTags.module.css';
 
-interface TechTagsProps {
-  tags: string[];
+interface TechTag {
+  name: string;
+  url: string;
 }
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-    },
-  },
-};
-
-const tagVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
+interface TechTagsProps {
+  tags: TechTag[];
+}
 
 const TechTags: FC<TechTagsProps> = ({ tags }) => {
   return (
     <motion.div
-      variants={containerVariants}
+      variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
       <Group gap="xs" wrap="wrap">
         {tags.map(tag => (
-          <motion.div key={tag} variants={tagVariants}>
-            <Badge variant="light" size="sm" classNames={{ root: classes.badge }}>
-              {tag}
+          <motion.div key={tag.name} variants={staggerChild}>
+            <Badge
+              component="a"
+              href={tag.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="light"
+              size="sm"
+              classNames={{ root: classes.badge }}
+              style={{ cursor: 'pointer' }}
+            >
+              {tag.name}
             </Badge>
           </motion.div>
         ))}

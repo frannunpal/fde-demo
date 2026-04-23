@@ -1,15 +1,23 @@
-// Re-exports de utilidades existentes
-export { makeWindow } from '@/Shared/Testing/Utils/makeWindow';
-export { default as AppWithPickerOpen } from '@/Shared/Testing/Utils/AppWithPickerOpen';
-export { createMockFileNode, createMockFolderNode } from '@/Shared/Testing/Utils/testFactories';
+import type { FSNode } from '@fde-desktop/fde-core';
+import {
+  createMockFileNode,
+  createMockFolderNode,
+  makeWindow,
+  createMockWindowEntity,
+} from '@/Shared/Testing/Utils';
+import AppWithPickerOpen from '@fde-desktop/fde-core-test/Utils/AppWithPickerOpen';
+
+// Re-export utilities
+export {
+  makeWindow,
+  AppWithPickerOpen,
+  createMockFileNode,
+  createMockFolderNode,
+  createMockWindowEntity,
+};
 
 // Tipos
-export type { FSNode } from '@/Shared/Types/FileSystemTypes';
-export type { WindowEntity } from '@fde-desktop/fde-core';
-
-// Factories genéricas de FSNodes
-import { createMockFileNode, createMockFolderNode } from '@/Shared/Testing/Utils/testFactories';
-import type { FSNode } from '@/Shared/Types/FileSystemTypes';
+export type { FSNode, WindowEntity } from '@fde-desktop/fde-core';
 
 /**
  * FSNodes básicos: carpetas raíz + archivos comunes

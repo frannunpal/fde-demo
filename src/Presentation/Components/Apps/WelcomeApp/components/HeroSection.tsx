@@ -1,28 +1,36 @@
-import { type FC } from "react";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import { Box, Text, Group, Button, Avatar, Image } from "@mantine/core";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { PROFILE } from "@/Shared/Constants/profileData";
-import classes from "./HeroSection.module.css";
-import Yo from "@public/Yo.jpg";
+import { type FC } from 'react';
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { Box, Text, Group, Button, Avatar, Image } from '@mantine/core';
+import { useFiIconElement, useUnicodeAnimation } from '@fde-desktop/fde-core';
+import { PROFILE } from '@/Shared/Constants/profileData';
+import { fadeSlideUp } from '../motionVariants';
+import classes from './HeroSection.module.css';
+import Yo from '/Yo.jpg';
 
 const HeroSection: FC = () => {
-  const { t, i18n } = useTranslation("welcome");
+  const { t, i18n } = useTranslation('welcome');
 
   const handleDownloadCV = () => {
-    const cvPath =
-      i18n.language === "es" ? PROFILE.cvUrls.es : PROFILE.cvUrls.en;
+    const cvPath = i18n.language === 'es' ? PROFILE.cvUrls.es : PROFILE.cvUrls.en;
     const base = import.meta.env.BASE_URL;
-    window.open(`${base}${cvPath}`, "_blank");
+    window.open(`${base}${cvPath}`, '_blank');
   };
 
   const handleContactMe = () => {
     window.location.href = `mailto:${PROFILE.email}`;
   };
 
+  const LinkedInIcon = useFiIconElement('FiLinkedin', { size: 28 });
+  const GitHubIcon = useFiIconElement('FiGithub', { size: 26 });
+  const frame = useUnicodeAnimation('pulse');
+
   return (
     <Box className={classes.hero} data-testid="hero-section">
+      <div className={classes.background} aria-hidden="true">
+        <span>{frame}</span>
+      </div>
+
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
@@ -34,26 +42,16 @@ const HeroSection: FC = () => {
         </Avatar>
       </motion.div>
 
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-      >
+      <motion.div {...fadeSlideUp(0.2)}>
         <Text fw={700} size="xl" className={classes.name}>
           {PROFILE.name}
         </Text>
         <Text c="dimmed" size="lg">
-          {t("hero.title")}
+          {t('hero.title')}
         </Text>
       </motion.div>
 
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.4 }}
-      >
+      <motion.div {...fadeSlideUp(0.4)}>
         <Group className={classes.links}>
           <a
             href={PROFILE.linkedin}
@@ -62,7 +60,7 @@ const HeroSection: FC = () => {
             aria-label="LinkedIn"
             className={classes.iconLink}
           >
-            <FiLinkedin size={28} />
+            {LinkedInIcon}
           </a>
           <a
             href={PROFILE.github}
@@ -71,23 +69,18 @@ const HeroSection: FC = () => {
             aria-label="GitHub"
             className={classes.iconLink}
           >
-            <FiGithub size={26} />
+            {GitHubIcon}
           </a>
         </Group>
       </motion.div>
 
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.6 }}
-      >
+      <motion.div {...fadeSlideUp(0.6)}>
         <Group className={classes.actions}>
           <Button variant="filled" onClick={handleDownloadCV}>
-            {t("hero.downloadCV")}
+            {t('hero.downloadCV')}
           </Button>
           <Button variant="light" onClick={handleContactMe}>
-            {t("hero.contactMe")}
+            {t('hero.contactMe')}
           </Button>
         </Group>
       </motion.div>

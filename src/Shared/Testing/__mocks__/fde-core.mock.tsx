@@ -49,6 +49,7 @@ const mockSettingsStore = createMockStore({
   wallpaper: '/Images/wallpaper.jpg',
   launcherIcon: 'FcMenu',
   language: 'en',
+  animationDuration: 0.3,
   toggleTheme: vi.fn(),
   setThemeMode: vi.fn(),
   setCustomThemeColors: vi.fn(),

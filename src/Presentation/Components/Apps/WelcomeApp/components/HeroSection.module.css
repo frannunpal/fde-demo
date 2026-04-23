@@ -1,10 +1,28 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 2rem 1rem;
   gap: 1rem;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.15;
+  font-size: 19rem;
+  font-family: monospace;
+  line-height: 1;
+  color: var(--mantine-primary-color-filled);
+  user-select: none;
 }
 
 .avatar {

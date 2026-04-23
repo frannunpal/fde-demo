@@ -5,7 +5,7 @@ import type { WindowContentProps } from '@fde-desktop/fde-core';
 import HeroSection from './components/HeroSection';
 import SkillsBar from './components/SkillsBar';
 import TechTags from './components/TechTags';
-import ExperienceCard from './components/ExperienceCard';
+import ExperienceDepthSelect from './components/ExperienceDepthSelect';
 import CircularProgress from './components/CircularProgress';
 import { EXPERIENCE, SKILLS, LANGUAGES, TECH_STACK } from '@/Shared/Constants/profileData';
 import classes from './WelcomeApp.module.css';
@@ -25,6 +25,15 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
 
           <Divider />
 
+          <div>
+            <Title order={3} mb="md">
+              {t('experience')}
+            </Title>
+            <ExperienceDepthSelect experiences={EXPERIENCE} />
+          </div>
+
+          <Divider />
+
           <div data-testid="skills-section">
             <Stack gap="md">
               <Title order={3}>{t('skills.technical')}</Title>
@@ -32,25 +41,32 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
             </Stack>
           </div>
 
-          <div>
-            <Title order={4} mb="sm">
-              {t('skills.soft')}
-            </Title>
-            <SkillsBar skills={SKILLS.soft} />
-          </div>
-
           <Divider />
 
-          <div>
-            <Title order={3} mb="md">
-              {t('languages')}
-            </Title>
-            <Group gap="lg">
-              {LANGUAGES.map(lang => (
-                <CircularProgress key={lang.code} value={lang.level} size={80} label={lang.name} />
-              ))}
-            </Group>
-          </div>
+          <Group align="flex-start" style={{ display: 'grid', gridTemplateColumns: '1fr 3fr' }}>
+            <div>
+              <Title order={4} mb="sm">
+                {t('languages')}
+              </Title>
+              <Group gap="lg">
+                {LANGUAGES.map(lang => (
+                  <CircularProgress
+                    key={lang.code}
+                    value={lang.level}
+                    size={80}
+                    label={lang.name}
+                  />
+                ))}
+              </Group>
+            </div>
+
+            <div>
+              <Title order={4} mb="sm">
+                {t('skills.soft')}
+              </Title>
+              <SkillsBar skills={SKILLS.soft} />
+            </div>
+          </Group>
 
           <Divider />
 
@@ -59,19 +75,6 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
               {t('techStack')}
             </Title>
             <TechTags tags={TECH_STACK} />
-          </div>
-
-          <Divider />
-
-          <div>
-            <Title order={3} mb="md">
-              {t('experience')}
-            </Title>
-            <Stack gap="md">
-              {EXPERIENCE.map((exp, index) => (
-                <ExperienceCard key={exp.company} experience={exp} index={index} />
-              ))}
-            </Stack>
           </div>
         </Stack>
       </Container>

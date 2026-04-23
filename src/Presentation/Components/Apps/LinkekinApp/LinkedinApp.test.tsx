@@ -2,7 +2,7 @@
 import '@/Shared/Testing/__mocks__/jsdom-setup';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils/renderWithMantine';
+import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils';
 
 const { default: LinkedinApp } = await import('./LinkedinApp');
 

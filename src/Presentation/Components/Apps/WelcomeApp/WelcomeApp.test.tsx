@@ -3,7 +3,7 @@ import '@/Shared/Testing/__mocks__/jsdom-setup';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import WelcomeApp from './WelcomeApp';
-import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils/renderWithMantine';
+import { renderWithMantine as wrapper } from '@/Shared/Testing/Utils';
 
 const mockI18n = {
   t: (key: string) => {
@@ -44,6 +44,22 @@ vi.mock('framer-motion', () => ({
       </circle>
     ),
   },
+}));
+
+vi.mock('@gfazioli/mantine-depth-select', () => ({
+  DepthSelect: ({ data }: { data: Array<{ value: string; view: React.ReactNode }> }) => (
+    <div data-testid="depth-select">
+      {data.map(item => (
+        <div key={item.value} data-testid={`depth-item-${item.value}`}>
+          {item.view}
+        </div>
+      ))}
+    </div>
+  ),
+}));
+
+vi.mock('@mantine/charts', () => ({
+  LineChart: () => <div data-testid="line-chart" />,
 }));
 
 describe('WelcomeApp', () => {
@@ -89,12 +105,22 @@ describe('WelcomeApp', () => {
     expect(screen.getByText('Ericsson')).toBeInTheDocument();
   });
 
-  it('renders tech tags', () => {
+  it('renders tech tags as links with correct href', () => {
     render(<WelcomeApp />, { wrapper });
 
-    expect(screen.getByText('React')).toBeInTheDocument();
-    expect(screen.getByText('TypeScript')).toBeInTheDocument();
-    expect(screen.getByText('Kubernetes')).toBeInTheDocument();
+    const reactLink = screen.getByText('React').closest('a');
+    expect(reactLink).toHaveAttribute('href', 'https://react.dev');
+    expect(reactLink).toHaveAttribute('target', '_blank');
+
+    const k8sLink = screen.getByText('Kubernetes').closest('a');
+    expect(k8sLink).toHaveAttribute('href', 'https://kubernetes.io');
+  });
+
+  it('renders languages and soft skills in the same section', () => {
+    render(<WelcomeApp />, { wrapper });
+
+    expect(screen.getByText('Languages')).toBeInTheDocument();
+    expect(screen.getByText('Soft Skills')).toBeInTheDocument();
   });
 
   it('calls notifyReady on mount', () => {

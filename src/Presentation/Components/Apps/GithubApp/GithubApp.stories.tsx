@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import GithubApp from './GithubApp';
-import { makeWindow } from '@/Shared/Testing/Utils/makeWindow';
-import AppWithPickerOpen from '@/Shared/Testing/Utils/AppWithPickerOpen';
+import { makeWindow } from '@/Shared/Testing/Utils';
+import AppWithPickerOpen from '@fde-desktop/fde-core-test/Utils/AppWithPickerOpen';
 
 const meta: Meta<typeof GithubApp> = {
   title: 'Apps/GithubApp',
