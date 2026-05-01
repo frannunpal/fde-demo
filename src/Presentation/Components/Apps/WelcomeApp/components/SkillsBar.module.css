@@ -2,6 +2,56 @@
   width: 100%;
 }
 
+.toggle {
+  margin-left: auto;
+}
+
+.barsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 160px 1fr 40px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.barLabel {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barTrack {
+  height: 8px;
+  border-radius: 99px;
+  background-color: var(--mantine-color-gray-2);
+  overflow: hidden;
+}
+
+:global([data-mantine-color-scheme='dark']) .barTrack {
+  background-color: var(--mantine-color-dark-4);
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(
+    90deg,
+    var(--mantine-primary-color-filled) 0%,
+    var(--mantine-color-cyan-4) 100%
+  );
+}
+
+.barValue {
+  text-align: right;
+  color: var(--mantine-color-dimmed);
+}
+
+/* legacy — kept for unused css-module fields */
 .skills {
   display: flex;
   flex-direction: column;

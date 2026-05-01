@@ -73,6 +73,12 @@ describe('WelcomeApp', () => {
     expect(screen.getByText('Francisco Núñez Palomares')).toBeInTheDocument();
   });
 
+  it('renders bio text in hero section', () => {
+    render(<WelcomeApp />, { wrapper });
+
+    expect(screen.getByText(/Fullstack developer with 15\+ years/)).toBeInTheDocument();
+  });
+
   it('renders skills section', () => {
     render(<WelcomeApp />, { wrapper });
 

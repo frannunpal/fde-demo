@@ -14,12 +14,6 @@ vi.stubGlobal('window', {
   open: mockOpen,
 });
 
-vi.mock('unicode-animations', () => ({
-  spinners: {
-    pulse: { frames: ['⠀⠶⠀', '⠀⠿⠀'], interval: 180 },
-  },
-}));
-
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (key: string) => {
@@ -71,6 +65,12 @@ describe('HeroSection', () => {
     expect(screen.getByText('Fullstack Developer & DevOps')).toBeInTheDocument();
   });
 
+  it('renders bio text', () => {
+    render(<HeroSection />, { wrapper });
+
+    expect(screen.getByText(/Fullstack developer with 15\+ years/)).toBeInTheDocument();
+  });
+
   it('renders download CV button', () => {
     render(<HeroSection />, { wrapper });
 
@@ -117,11 +117,10 @@ describe('HeroSection', () => {
     expect((window as unknown as Record<string, unknown>).location).toHaveProperty('href');
   });
 
-  it('renders the unicode animation background', () => {
+  it('renders the decorative background element', () => {
     render(<HeroSection />, { wrapper });
 
     const bg = document.querySelector('[aria-hidden="true"]');
     expect(bg).toBeInTheDocument();
-    expect(bg?.textContent).toBe('⠀⠶⠀');
   });
 });

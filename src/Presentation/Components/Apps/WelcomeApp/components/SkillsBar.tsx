@@ -1,5 +1,6 @@
-import { type FC } from 'react';
-import { Text, Paper, Stack } from '@mantine/core';
+import { type FC, useState } from 'react';
+import { Text, Paper, Stack, Group, SegmentedControl } from '@mantine/core';
+import { motion } from 'framer-motion';
 import { LineChart } from '@mantine/charts';
 import { SKILL_YEARS, EXPERIENCE } from '@/Shared/Constants/profileData';
 import classes from './SkillsBar.module.css';
@@ -70,7 +71,32 @@ const renderTooltip =
     );
   };
 
+const CurrentBarsView: FC<{ skills: Skill[] }> = ({ skills }) => (
+  <div className={classes.barsContainer}>
+    {skills.map((skill, index) => (
+      <div key={skill.name} className={classes.barRow}>
+        <Text size="sm" className={classes.barLabel}>
+          {skill.name}
+        </Text>
+        <div className={classes.barTrack}>
+          <motion.div
+            className={classes.barFill}
+            initial={{ width: 0 }}
+            animate={{ width: `${skill.level}%` }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.05 }}
+          />
+        </div>
+        <Text size="xs" fw={600} className={classes.barValue}>
+          {skill.level}%
+        </Text>
+      </div>
+    ))}
+  </div>
+);
+
 const SkillsBar: FC<SkillsBarProps> = ({ skills, title }) => {
+  const [view, setView] = useState<'current' | 'history'>('current');
+
   const data = SKILL_YEARS.map((year, i) => {
     const point: Record<string, number | string> = { year: String(year) };
     skills.forEach(skill => {
@@ -90,25 +116,42 @@ const SkillsBar: FC<SkillsBarProps> = ({ skills, title }) => {
 
   return (
     <div className={classes.container}>
-      {title && (
-        <Text fw={600} mb="sm">
-          {title}
-        </Text>
+      <Group justify="space-between" mb="sm" align="center">
+        {title && (
+          <Text fw={600} size="sm">
+            {title}
+          </Text>
+        )}
+        <SegmentedControl
+          size="xs"
+          value={view}
+          onChange={v => setView(v as 'current' | 'history')}
+          data={[
+            { label: '≡ Current', value: 'current' },
+            { label: '📈 History', value: 'history' },
+          ]}
+          className={classes.toggle}
+        />
+      </Group>
+
+      {view === 'current' ? (
+        <CurrentBarsView skills={skills} />
+      ) : (
+        <LineChart
+          h={220}
+          data={data}
+          dataKey="year"
+          withLegend
+          withDots={false}
+          withTooltip
+          tooltipProps={{ content: renderTooltip(seriesColors) }}
+          series={series}
+          yAxisProps={{ domain: [0, 100] }}
+          tickLine="none"
+          gridAxis="y"
+          curveType="natural"
+        />
       )}
-      <LineChart
-        h={220}
-        data={data}
-        dataKey="year"
-        withLegend
-        withDots={false}
-        withTooltip
-        tooltipProps={{ content: renderTooltip(seriesColors) }}
-        series={series}
-        yAxisProps={{ domain: [0, 100] }}
-        tickLine="none"
-        gridAxis="y"
-        curveType="natural"
-      />
     </div>
   );
 };

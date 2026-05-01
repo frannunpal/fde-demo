@@ -24,6 +24,9 @@ describe('TechTags', () => {
     { name: 'TypeScript', url: 'https://www.typescriptlang.org' },
     { name: 'Node.js', url: 'https://nodejs.org/en' },
     { name: 'Kubernetes', url: 'https://kubernetes.io' },
+    { name: 'PostgreSQL', url: 'https://www.postgresql.org' },
+    { name: 'Jest', url: 'https://jestjs.io' },
+    { name: 'Git', url: 'https://git-scm.com' },
   ];
 
   it('renders all tag names', () => {
@@ -44,10 +47,29 @@ describe('TechTags', () => {
     expect(reactLink).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
-  it('renders correct number of tags', () => {
+  it('renders category headers for known categories', () => {
     render(<TechTags tags={mockTags} />, { wrapper });
 
-    const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(4);
+    expect(screen.getByTestId('category-Frontend')).toBeInTheDocument();
+    expect(screen.getByTestId('category-Backend')).toBeInTheDocument();
+    expect(screen.getByTestId('category-DevOps')).toBeInTheDocument();
+    expect(screen.getByTestId('category-Database')).toBeInTheDocument();
+    expect(screen.getByTestId('category-Testing')).toBeInTheDocument();
+    expect(screen.getByTestId('category-Tools')).toBeInTheDocument();
+  });
+
+  it('groups React and TypeScript under Frontend', () => {
+    render(<TechTags tags={mockTags} />, { wrapper });
+
+    const frontendSection = screen.getByTestId('category-Frontend');
+    expect(frontendSection).toHaveTextContent('React');
+    expect(frontendSection).toHaveTextContent('TypeScript');
+  });
+
+  it('places Kubernetes under DevOps', () => {
+    render(<TechTags tags={mockTags} />, { wrapper });
+
+    const devopsSection = screen.getByTestId('category-DevOps');
+    expect(devopsSection).toHaveTextContent('Kubernetes');
   });
 });

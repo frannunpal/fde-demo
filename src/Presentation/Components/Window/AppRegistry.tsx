@@ -1,4 +1,5 @@
 import type { AppRegistryEntry, AppComponent, AppEntry } from '@fde-desktop/fde-core';
+import { TerminalApp, CodeServerApp, StorybookApp } from '@fde-desktop/fde-core';
 
 // App manifests — THE SINGLE SOURCE OF TRUTH for app metadata
 // Contains: name, icon, dimensions, singleWindow, autoLoad, etc.
@@ -106,16 +107,16 @@ export const userApps: Record<string, AppRegistryEntry> = {
     isLazy: true,
   },
   terminal: {
-    loader: () => import('@fde-desktop/fde-core').then(m => ({ default: m.TerminalApp })),
-    isLazy: true,
+    loader: () => Promise.resolve({ default: TerminalApp }),
+    isLazy: false,
   },
   'code-server': {
-    loader: () => import('@fde-desktop/fde-core').then(m => ({ default: m.CodeServerApp })),
-    isLazy: true,
+    loader: () => Promise.resolve({ default: CodeServerApp }),
+    isLazy: false,
   },
   storybook: {
-    loader: () => import('@fde-desktop/fde-core').then(m => ({ default: m.StorybookApp })),
-    isLazy: true,
+    loader: () => Promise.resolve({ default: StorybookApp }),
+    isLazy: false,
   },
   'dos-emulator': {
     loader: () => import('@presentation/Components/Apps/DosEmulatorApp/DosEmulatorApp'),

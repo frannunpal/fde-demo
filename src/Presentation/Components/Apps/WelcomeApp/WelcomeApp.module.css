@@ -5,5 +5,17 @@
 }
 
 :global([data-mantine-color-scheme='dark']) .container {
-  background-color: var(--mantine-color-dark-7);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--mantine-primary-color-filled) 4%, var(--mantine-color-dark-7)) 0%,
+    var(--mantine-color-dark-7) 35%
+  );
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--mantine-primary-color-filled);
 }

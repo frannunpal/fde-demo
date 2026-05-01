@@ -26,10 +26,12 @@ body,
 
 html {
   touch-action: manipulation;
+  overflow: hidden;
 }
 
 body {
   min-width: 320px;
+  overflow: hidden;
   overscroll-behavior-y: contain;
 }
 

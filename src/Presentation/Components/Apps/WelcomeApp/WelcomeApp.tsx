@@ -26,9 +26,11 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
           <Divider />
 
           <div>
-            <Title order={3} mb="md">
-              {t('experience')}
-            </Title>
+            <div className={classes.sectionHeader}>
+              <Title order={3} mb="md">
+                {t('experience')}
+              </Title>
+            </div>
             <ExperienceDepthSelect experiences={EXPERIENCE} />
           </div>
 
@@ -36,7 +38,9 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
 
           <div data-testid="skills-section">
             <Stack gap="md">
-              <Title order={3}>{t('skills.technical')}</Title>
+              <div className={classes.sectionHeader}>
+                <Title order={3}>{t('skills.technical')}</Title>
+              </div>
               <SkillsBar skills={SKILLS.technical} />
             </Stack>
           </div>
@@ -45,9 +49,11 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
 
           <Group align="flex-start" style={{ display: 'grid', gridTemplateColumns: '1fr 3fr' }}>
             <div>
-              <Title order={4} mb="sm">
-                {t('languages')}
-              </Title>
+              <div className={classes.sectionHeader}>
+                <Title order={4} mb="sm">
+                  {t('languages')}
+                </Title>
+              </div>
               <Group gap="lg">
                 {LANGUAGES.map(lang => (
                   <CircularProgress
@@ -61,9 +67,11 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
             </div>
 
             <div>
-              <Title order={4} mb="sm">
-                {t('skills.soft')}
-              </Title>
+              <div className={classes.sectionHeader}>
+                <Title order={4} mb="sm">
+                  {t('skills.soft')}
+                </Title>
+              </div>
               <SkillsBar skills={SKILLS.soft} />
             </div>
           </Group>
@@ -71,9 +79,11 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
           <Divider />
 
           <div>
-            <Title order={3} mb="md">
-              {t('techStack')}
-            </Title>
+            <div className={classes.sectionHeader}>
+              <Title order={3} mb="md">
+                {t('techStack')}
+              </Title>
+            </div>
             <TechTags tags={TECH_STACK} />
           </div>
         </Stack>

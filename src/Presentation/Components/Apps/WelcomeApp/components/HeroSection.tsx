@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Box, Text, Group, Button, Avatar, Image } from '@mantine/core';
-import { useFiIconElement, useUnicodeAnimation } from '@fde-desktop/fde-core';
+import { useFiIconElement } from '@fde-desktop/fde-core';
 import { PROFILE } from '@/Shared/Constants/profileData';
 import { fadeSlideUp } from '../motionVariants';
 import classes from './HeroSection.module.css';
@@ -21,15 +21,12 @@ const HeroSection: FC = () => {
     window.location.href = `mailto:${PROFILE.email}`;
   };
 
-  const LinkedInIcon = useFiIconElement('FiLinkedin', { size: 28 });
-  const GitHubIcon = useFiIconElement('FiGithub', { size: 26 });
-  const frame = useUnicodeAnimation('pulse');
+  const LinkedInIcon = useFiIconElement('FiLinkedin', { size: 32 });
+  const GitHubIcon = useFiIconElement('FiGithub', { size: 32 });
 
   return (
     <Box className={classes.hero} data-testid="hero-section">
-      <div className={classes.background} aria-hidden="true">
-        <span>{frame}</span>
-      </div>
+      <div className={classes.background} aria-hidden="true" />
 
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
@@ -37,17 +34,23 @@ const HeroSection: FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
       >
-        <Avatar size={120} radius="xl" className={classes.avatar}>
-          <Image src={Yo} />
-        </Avatar>
+        <div className={classes.avatarWrapper}>
+          <Avatar size={160} radius="xl" className={classes.avatar}>
+            <Image src={Yo} />
+          </Avatar>
+        </div>
       </motion.div>
 
       <motion.div {...fadeSlideUp(0.2)}>
-        <Text fw={700} size="xl" className={classes.name}>
+        <Text fw={800} className={classes.name}>
           {PROFILE.name}
         </Text>
-        <Text c="dimmed" size="lg">
+        <Text c="dimmed" size="lg" mt={4}>
           {t('hero.title')}
+        </Text>
+        <Text className={classes.bio} mt="xs">
+          Fullstack developer with 15+ years building products from 0→1. Specialized in React, Node,
+          Kubernetes & cloud.
         </Text>
       </motion.div>
 
@@ -76,10 +79,14 @@ const HeroSection: FC = () => {
 
       <motion.div {...fadeSlideUp(0.6)}>
         <Group className={classes.actions}>
-          <Button variant="filled" onClick={handleDownloadCV}>
+          <Button
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan', deg: 135 }}
+            onClick={handleDownloadCV}
+          >
             {t('hero.downloadCV')}
           </Button>
-          <Button variant="light" onClick={handleContactMe}>
+          <Button variant="outline" onClick={handleContactMe}>
             {t('hero.contactMe')}
           </Button>
         </Group>
