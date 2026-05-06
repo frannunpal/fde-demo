@@ -9,7 +9,7 @@
     "lint": "eslint . --cache --cache-location node_modules/.cache/eslint/"
   },
   "dependencies": {
-    "@fde-desktop/fde-core": "0.4.46",
+    "@fde-desktop/fde-core": "0.4.47",
     "@gfazioli/mantine-depth-select": "^2.0.0",
     "@mantine/charts": "^9.1.0",
     "@mantine/core": "^9.1.0",

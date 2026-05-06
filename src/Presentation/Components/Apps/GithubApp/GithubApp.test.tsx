@@ -27,17 +27,23 @@ describe('GithubApp', () => {
     openSpy.mockRestore();
   });
 
-  it('should render explanation text about iframe blocking', () => {
+  it('should render the user name', () => {
     render(<GithubApp />, { wrapper });
 
-    expect(
-      screen.getByText(/github blocks embedding in iframes for security reasons/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Francisco Núñez Palomares')).toBeInTheDocument();
   });
 
-  it('should render the title', () => {
+  it('should render the github handle', () => {
     render(<GithubApp />, { wrapper });
 
-    expect(screen.getByText('GitHub')).toBeInTheDocument();
+    expect(screen.getByText('@frannunpal')).toBeInTheDocument();
+  });
+
+  it('should render stats chips', () => {
+    render(<GithubApp />, { wrapper });
+
+    expect(screen.getByText('Repos')).toBeInTheDocument();
+    expect(screen.getByText('Years')).toBeInTheDocument();
+    expect(screen.getByText('Followers')).toBeInTheDocument();
   });
 });

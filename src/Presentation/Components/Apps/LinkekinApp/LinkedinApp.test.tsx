@@ -29,17 +29,23 @@ describe('LinkedinApp', () => {
     openSpy.mockRestore();
   });
 
-  it('should render explanation text about iframe blocking', () => {
+  it('should render the user name', () => {
     render(<LinkedinApp />, { wrapper });
 
-    expect(
-      screen.getByText(/linkedin blocks embedding in iframes for security reasons/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Francisco Núñez Palomares')).toBeInTheDocument();
+  });
+
+  it('should render experience section', () => {
+    render(<LinkedinApp />, { wrapper });
+
+    expect(screen.getByText('Experience')).toBeInTheDocument();
+    expect(screen.getByText('MyNexoria')).toBeInTheDocument();
+    expect(screen.getByText('Grupo MasMovil')).toBeInTheDocument();
   });
 
   it('should render the title', () => {
     render(<LinkedinApp />, { wrapper });
 
-    expect(screen.getByText('LinkedIn')).toBeInTheDocument();
+    expect(screen.getByText('Fullstack Developer & DevOps')).toBeInTheDocument();
   });
 });
