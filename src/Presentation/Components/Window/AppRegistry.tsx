@@ -89,6 +89,27 @@ export const userAppEntries: AppEntry[] = [
     minHeight: 480,
     autoLoad: { url: 'Games/doom.jsdos', name: 'DOOM' },
   },
+  {
+    id: 'cities',
+    name: 'Cities',
+    icon: '🏙️',
+    fcIcon: 'FcCity',
+    defaultWidth: 1024,
+    defaultHeight: 768,
+    minWidth: 800,
+    minHeight: 600,
+  },
+  {
+    id: 'ink-chat',
+    name: 'Ink Chat',
+    icon: '💬',
+    fcIcon: 'FcComments',
+    defaultWidth: 600,
+    defaultHeight: 500,
+    minWidth: 600,
+    minHeight: 500,
+    singleWindow: true,
+  },
 ];
 
 // Component registry — only contains component loading info
@@ -124,6 +145,41 @@ export const userApps: Record<string, AppRegistryEntry> = {
   },
   doom: {
     loader: () => import('@presentation/Components/Apps/DosEmulatorApp/DosEmulatorApp'),
+    isLazy: true,
+  },
+  cities: {
+    loader: () =>
+      import('@fde-desktop/cities/Integration/CitiesApp').then(m => ({ default: m.CitiesApp })),
+    menuBarLoader: () =>
+      import('@fde-desktop/cities/Integration/CitiesAppMenuBar').then(m => ({
+        default: m.CitiesAppMenuBar,
+      })),
+    isLazy: true,
+  },
+  'cities-theatre': {
+    loader: () =>
+      import('@fde-desktop/cities/Presentation/Components/CitiesTheatre').then(m => ({
+        default: m.CitiesTheatreApp,
+      })),
+    isLazy: true,
+    appName: 'Cities Theatre',
+    singleWindow: true,
+    alwaysOnTop: true,
+    canMaximize: false,
+    defaultWidth: 600,
+    defaultHeight: 600,
+    minWidth: 500,
+    minHeight: 500,
+    icon: '🎭',
+    fcIcon: 'FcBarChart',
+  },
+  'ink-chat': {
+    loader: () =>
+      import('@fde-desktop/ink/Integration/InkChatApp').then(m => ({ default: m.InkChatApp })),
+    menuBarLoader: () =>
+      import('@fde-desktop/ink/Integration/InkChatAppMenuBar').then(m => ({
+        default: m.InkChatAppMenuBar,
+      })),
     isLazy: true,
   },
 };

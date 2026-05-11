@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "baseUrl": ".."
+  },
+  "include": [
+    "**/*",
+    "../packages/core/src/**/*",
+    "../packages/chat/src/**/*",
+    "../packages/ink/src/**/*",
+    "../packages/cities/src/**/*"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
+}

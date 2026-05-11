@@ -11,6 +11,7 @@ registerDesktopApps([
   'linkedin',
   'github',
   'doom',
+  'cities',
 ]);
 
 function App() {

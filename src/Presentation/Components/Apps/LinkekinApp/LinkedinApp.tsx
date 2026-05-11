@@ -5,8 +5,7 @@ import { useFiIconElement } from '@fde-desktop/fde-core';
 import { PROFILE, EXPERIENCE } from '@/Shared/Constants/profileData';
 import classes from './LinkedinApp.module.css';
 
-const LINKEDIN_URL =
-  'https://www.linkedin.com/in/francisco-n%C3%BA%C3%B1ez-palomares-74a484171/';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/francisco-n%C3%BA%C3%B1ez-palomares-74a484171/';
 const GITHUB_AVATAR = 'https://github.com/frannunpal.png';
 
 const RECENT_EXPERIENCE = EXPERIENCE.slice(0, 2);
@@ -39,7 +38,7 @@ const LinkedinApp: FC<WindowContentProps> = ({ notifyReady, window: win }) => {
             src={GITHUB_AVATAR}
             alt={PROFILE.name}
             className={classes.avatar}
-            onError={(e) => {
+            onError={e => {
               (e.currentTarget as HTMLImageElement).style.display = 'none';
             }}
           />
@@ -54,7 +53,7 @@ const LinkedinApp: FC<WindowContentProps> = ({ notifyReady, window: win }) => {
 
         <div className={classes.sectionTitle}>Experience</div>
         <div className={classes.experience}>
-          {RECENT_EXPERIENCE.map((exp) => (
+          {RECENT_EXPERIENCE.map(exp => (
             <div key={exp.company} className={classes.expItem}>
               <div className={classes.expDot} />
               <div className={classes.expInfo}>

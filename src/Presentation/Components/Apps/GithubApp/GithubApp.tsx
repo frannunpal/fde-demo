@@ -41,18 +41,18 @@ const GithubApp: FC<WindowContentProps> = ({ notifyReady, window: win }) => {
           src={GITHUB_AVATAR}
           alt={PROFILE.name}
           className={classes.avatar}
-          onError={(e) => {
+          onError={e => {
             (e.currentTarget as HTMLImageElement).style.display = 'none';
           }}
         />
         <Text className={classes.name}>{PROFILE.name}</Text>
         <Text className={classes.handle}>@frannunpal</Text>
         <Text className={classes.bio}>
-          Fullstack Developer &amp; DevOps · 15+ years building products from 0→1.
-          React, Node, Kubernetes &amp; cloud.
+          Fullstack Developer &amp; DevOps · 15+ years building products from 0→1. React, Node,
+          Kubernetes &amp; cloud.
         </Text>
         <div className={classes.stats}>
-          {GITHUB_STATS.map((s) => (
+          {GITHUB_STATS.map(s => (
             <div key={s.label} className={classes.stat}>
               <span className={classes.statValue}>{s.value}</span>
               <span className={classes.statLabel}>{s.label}</span>
