@@ -7,8 +7,8 @@ export const PROFILE = {
   linkedin: 'https://www.linkedin.com/in/francisco-núñez-palomares-74a484171/',
   github: 'https://github.com/frannunpal',
   cvUrls: {
-    en: 'Desktop/CV_2026_EN_v4.pdf',
-    es: 'Desktop/CV_2026_ES_v4.pdf',
+    en: 'Desktop/CV_2026_EN.pdf',
+    es: 'Desktop/CV_2026_ES.pdf',
   },
 };
 
@@ -175,7 +175,6 @@ export const TECH_STACK = [
   { name: 'Testing Library', url: 'https://testing-library.com' },
   { name: 'SCSS', url: 'https://sass-lang.com' },
   { name: 'Tailwind', url: 'https://tailwindcss.com' },
-  { name: 'Mantine', url: 'https://mantine.dev' },
   { name: 'deck.gl', url: 'https://deck.gl' },
   { name: 'Git', url: 'https://git-scm.com' },
   { name: 'Jira', url: 'https://www.atlassian.com/software/jira' },

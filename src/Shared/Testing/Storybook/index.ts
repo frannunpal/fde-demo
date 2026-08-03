@@ -109,10 +109,10 @@ export function createDocumentFsNodes(): FSNode[] {
     }),
     createMockFileNode({
       id: 'file-cv',
-      name: 'CV_2026_English.pdf',
+      name: 'CV_2026_EN.pdf',
       parentId: 'folder-desktop',
       mimeType: 'application/pdf',
-      url: `${import.meta.env.BASE_URL}Desktop/CV_2026_English.pdf`,
+      url: `${import.meta.env.BASE_URL}Desktop/CV_2026_EN.pdf`,
     }),
     createMockFolderNode('folder-documents', {
       name: 'Documents',
@@ -143,10 +143,10 @@ export function createFullFsNodes(): FSNode[] {
     }),
     createMockFileNode({
       id: 'file-cv',
-      name: 'CV_2026_English.pdf',
+      name: 'CV_2026_EN.pdf',
       parentId: 'folder-desktop',
       mimeType: 'application/pdf',
-      url: `${import.meta.env.BASE_URL}Desktop/CV_2026_English.pdf`,
+      url: `${import.meta.env.BASE_URL}Desktop/CV_2026_EN.pdf`,
     }),
     createMockFolderNode('folder-documents', {
       name: 'Documents',

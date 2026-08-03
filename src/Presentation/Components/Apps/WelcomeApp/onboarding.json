@@ -1,0 +1,20 @@
+[
+  {
+    "id": "div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(2) > div > div > span > img",
+    "title": "Skills & Experience",
+    "content": "This window shows my technical skills, experience, and the technologies I work with.",
+    "_bulletHtml": "<img class=\"m_9e117634 mantine-Image-root\" src=\"/Yo.jpg\">"
+  },
+  {
+    "id": "div:nth-child(2) > div > div > div > div:nth-child(5) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > p:nth-child(1)",
+    "title": "Soft Skills",
+    "content": "Beyond technical abilities, here are my soft skills and personal attributes.",
+    "_bulletHtml": "<p style=\"--text-fz: var(--mantine-font-size-sm); --text-lh: var(--mantine-line-height-sm);\" class=\"mantine-focus-auto _barLabel_ne1fz_22 m_b6d8b162 mantine-Text-root\" data-size=\"sm\">GCP / AWS</p>"
+  },
+  {
+    "id": "div > div > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(1) > a > span",
+    "title": "Tech Stack",
+    "content": "Technologies and tools I work with regularly.",
+    "_bulletHtml": "<span class=\"m_5add502a mantine-Badge-label\">Kubernetes</span>"
+  }
+]

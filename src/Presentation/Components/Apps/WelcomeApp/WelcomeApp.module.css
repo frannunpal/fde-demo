@@ -19,3 +19,15 @@
   padding-left: 0.75rem;
   border-left: 3px solid var(--mantine-primary-color-filled);
 }
+
+.languagesSoftSkillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .languagesSoftSkillsGrid {
+    grid-template-columns: 1fr;
+  }
+}

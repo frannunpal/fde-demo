@@ -10,5 +10,9 @@
   },
   "experience": "Professional Experience",
   "techStack": "Tech Stack",
-  "languages": "Languages"
+  "languages": "Languages",
+  "notification": {
+    "title": "Welcome Tour",
+    "message": "Click to discover the guided tour ✨"
+  }
 }

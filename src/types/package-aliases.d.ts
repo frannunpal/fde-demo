@@ -16,6 +16,10 @@ declare module '@fde-desktop/cities/Presentation/Components/CitiesTheatre' {
   export const CitiesTheatreApp: any;
 }
 
+declare module '@fde-desktop/cities/Presentation/Apps/FilterPanel' {
+  export const FilterPanelApp: any;
+}
+
 declare module '@fde-desktop/ink' {
   export const InkChatApp: any;
 }

@@ -21,14 +21,7 @@ import esWelcome from '@shared/Locales/es/welcome.json';
 type TranslationMap = Record<string, unknown>;
 type SupportedLanguage = 'en' | 'es';
 type Namespace =
-  | 'apps'
-  | 'settings'
-  | 'window'
-  | 'common'
-  | 'contextMenu'
-  | 'notifications'
-  | 'notes'
-  | 'welcome';
+  'apps' | 'settings' | 'window' | 'common' | 'contextMenu' | 'notifications' | 'notes' | 'welcome';
 
 const translations: Record<SupportedLanguage, Record<Namespace, TranslationMap>> = {
   en: {

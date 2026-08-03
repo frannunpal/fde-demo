@@ -110,6 +110,28 @@ export const userAppEntries: AppEntry[] = [
     minHeight: 500,
     singleWindow: true,
   },
+  {
+    id: 'sun-study',
+    name: 'Sun Study',
+    icon: '☀️',
+    defaultWidth: 1200,
+    defaultHeight: 900,
+    minWidth: 800,
+    minHeight: 600,
+  },
+  {
+    id: 'filter-panel',
+    name: 'Building Filters',
+    icon: '🔍',
+    fcIcon: 'FcSearch',
+    defaultWidth: 320,
+    defaultHeight: 600,
+    minWidth: 280,
+    minHeight: 500,
+    canMaximize: false,
+    alwaysOnTop: true,
+    singleWindow: true,
+  },
 ];
 
 // Component registry — only contains component loading info
@@ -179,6 +201,20 @@ export const userApps: Record<string, AppRegistryEntry> = {
     menuBarLoader: () =>
       import('@fde-desktop/ink/Integration/InkChatAppMenuBar').then(m => ({
         default: m.InkChatAppMenuBar,
+      })),
+    isLazy: true,
+  },
+  'sun-study': {
+    loader: () =>
+      import('@fde-desktop/cities/Presentation/Components/SunStudyApp').then(m => ({
+        default: m.SunStudyApp,
+      })),
+    isLazy: true,
+  },
+  'filter-panel': {
+    loader: () =>
+      import('@fde-desktop/cities/Presentation/Apps/FilterPanel').then(m => ({
+        default: m.FilterPanelApp,
       })),
     isLazy: true,
   },
