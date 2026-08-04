@@ -50,6 +50,14 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
+  // In dev (localhost), never use the cache — always fetch fresh from network.
+  // Prevents stale CSS/JS after dependency reinstalls (mantine, tiptap, etc.)
+  // where asset URLs stay the same but content changes.
+  if (isDev()) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
   // Never cache API requests - they must always be fresh
   // This prevents caching stale filesystem data and CORS errors from Docker sessions
   if (url.pathname.startsWith('/api/')) {

@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+  unicode-animations: true
+minimumReleaseAgeExclude:
+  - "@fde-desktop/fde-core@0.7.5"

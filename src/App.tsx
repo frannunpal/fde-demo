@@ -13,9 +13,11 @@ const FdeDesktop = lazy(() =>
       'linkedin',
       'github',
       'doom',
-      'cities',
-      'sun-study',
     ]);
+    // Force wallpaper module to 'default' so the defaultWallpaper prop is used
+    // (fde-core defaults to 'gradient' which ignores the image)
+    m.useSettingsStore.getState().setWallpaperModule('default');
+    m.useSettingsStore.getState().setWallpaper(null);
     return { default: m.FdeDesktop };
   }),
 );
