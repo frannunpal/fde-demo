@@ -1,33 +1,24 @@
-import { type FC, useEffect, useRef } from "react";
-import { useTranslation } from "react-i18next";
-import { Container, Title, Stack, Divider, Group } from "@mantine/core";
-import type { WindowContentProps } from "@fde-desktop/fde-core";
-import {
-  useRegisterOnboarding,
-  useNotifications,
-  useOnboardingStore,
-} from "@fde-desktop/fde-core";
-import type { OnboardingTourStep } from "@fde-desktop/fde-core";
-import onboardingSteps from "./onboarding.json";
-import HeroSection from "./components/HeroSection";
-import SkillsBar from "./components/SkillsBar";
-import TechTags from "./components/TechTags";
-import ExperienceDepthSelect from "./components/ExperienceDepthSelect";
-import CircularProgress from "./components/CircularProgress";
-import {
-  EXPERIENCE,
-  SKILLS,
-  LANGUAGES,
-  TECH_STACK,
-} from "@/Shared/Constants/profileData";
-import classes from "./WelcomeApp.module.css";
+import { type FC, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Container, Title, Stack, Divider, Group } from '@mantine/core';
+import type { WindowContentProps } from '@fde-desktop/fde-core';
+import { useRegisterOnboarding, useNotifications, useOnboardingStore } from '@fde-desktop/fde-core';
+import type { OnboardingTourStep } from '@fde-desktop/fde-core';
+import onboardingSteps from './onboarding.json';
+import HeroSection from './components/HeroSection';
+import SkillsBar from './components/SkillsBar';
+import TechTags from './components/TechTags';
+import ExperienceDepthSelect from './components/ExperienceDepthSelect';
+import CircularProgress from './components/CircularProgress';
+import { EXPERIENCE, SKILLS, LANGUAGES, TECH_STACK } from '@/Shared/Constants/profileData';
+import classes from './WelcomeApp.module.css';
 
 const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
-  const { t } = useTranslation("welcome");
+  const { t } = useTranslation('welcome');
   const { notify } = useNotifications();
   const hasShownNotification = useRef(false);
 
-  useRegisterOnboarding("welcome", onboardingSteps as OnboardingTourStep[]);
+  useRegisterOnboarding('welcome', onboardingSteps as OnboardingTourStep[]);
 
   useEffect(() => {
     notifyReady?.({});
@@ -40,13 +31,13 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
     const timer = setTimeout(() => {
       hasShownNotification.current = true;
       notify(
-        t("notification.title", "Welcome Tour"),
-        t("notification.message", "Click to discover the guided tour ✨"),
+        t('notification.title', 'Welcome Tour'),
+        t('notification.message', 'Click to discover the guided tour ✨'),
         {
-          fcIcon: "FcAbout",
+          fcIcon: 'FcAbout',
           autoClose: 15000,
           onClick: () => {
-            useOnboardingStore.getState().requestAutoStartTour("welcome");
+            useOnboardingStore.getState().requestAutoStartTour('welcome');
           },
         },
       );
@@ -68,7 +59,7 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
           <div>
             <div className={classes.sectionHeader}>
               <Title order={3} mb="md">
-                {t("experience")}
+                {t('experience')}
               </Title>
             </div>
             <ExperienceDepthSelect experiences={EXPERIENCE} />
@@ -76,30 +67,26 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
 
           <Divider />
 
-          <div
-            data-testid="skills-section"
-            data-onboarding-tour-id="welcome-skills"
-          >
+          <div data-testid="skills-section" data-onboarding-tour-id="welcome-skills">
             <Stack gap="md">
               <div className={classes.sectionHeader}>
-                <Title order={3}>{t("skills.technical")}</Title>
+                <Title order={3}>{t('skills.technical')}</Title>
               </div>
               <SkillsBar skills={SKILLS.technical} />
             </Stack>
           </div>
 
-          <Group
-            align="flex-start"
-            style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}
-          >
+          <Divider />
+
+          <Group align="flex-start" style={{ display: 'grid', gridTemplateColumns: '1fr 3fr' }}>
             <div>
               <div className={classes.sectionHeader}>
                 <Title order={4} mb="sm">
-                  {t("languages")}
+                  {t('languages')}
                 </Title>
               </div>
               <Group gap="lg">
-                {LANGUAGES.map((lang) => (
+                {LANGUAGES.map(lang => (
                   <CircularProgress
                     key={lang.code}
                     value={lang.level}
@@ -113,7 +100,7 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
             <div>
               <div className={classes.sectionHeader}>
                 <Title order={4} mb="sm">
-                  {t("skills.soft")}
+                  {t('skills.soft')}
                 </Title>
               </div>
               <SkillsBar skills={SKILLS.soft} />
@@ -125,7 +112,7 @@ const WelcomeApp: FC<WindowContentProps> = ({ window: win, notifyReady }) => {
           <div data-onboarding-tour-id="welcome-techstack">
             <div className={classes.sectionHeader}>
               <Title order={3} mb="md">
-                {t("techStack")}
+                {t('techStack')}
               </Title>
             </div>
             <TechTags tags={TECH_STACK} />
