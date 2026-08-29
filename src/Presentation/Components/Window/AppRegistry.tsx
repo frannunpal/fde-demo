@@ -141,6 +141,7 @@ export const userAppEntries: AppEntry[] = [
     defaultHeight: 800,
     minWidth: 800,
     minHeight: 600,
+    singleWindow: true,
   },
   {
     id: 'hvac-theatre',
