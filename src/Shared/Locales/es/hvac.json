@@ -1,8 +1,6 @@
 {
   "app": {
     "controls": "Controles",
-    "explode": "Explotar",
-    "collapse": "Juntar",
     "panelTitle": "Control HVAC"
   },
   "panel": {
@@ -24,9 +22,9 @@
     "speed05": "0.5x",
     "speed1": "1x",
     "speed2": "2x",
-    "explodedView": "Vista explotada",
     "returnGrills": "Rejillas de retorno",
-    "cutoffNote": "Objetivo: {temp}°C — corte 22°"
+    "cutoffNote": "Objetivo: {temp}°C — corte 22°",
+    "airFlow": "Caudal climatizador"
   },
   "tooltip": {
     "label": "🛋️ Planta {{floor}}",

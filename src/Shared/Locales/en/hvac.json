@@ -1,8 +1,6 @@
 {
   "app": {
     "controls": "Controls",
-    "explode": "Explode",
-    "collapse": "Collapse",
     "panelTitle": "HVAC Controls"
   },
   "panel": {
@@ -24,9 +22,9 @@
     "speed05": "0.5x",
     "speed1": "1x",
     "speed2": "2x",
-    "explodedView": "Exploded view",
     "returnGrills": "Return grills",
-    "cutoffNote": "Setpoint: {temp}°C — 22° cutoff"
+    "cutoffNote": "Setpoint: {temp}°C — 22° cutoff",
+    "airFlow": "AHU airflow"
   },
   "tooltip": {
     "label": "🛋️ Floor {{floor}}",
