@@ -1,0 +1,20 @@
+{
+  "pickSelector": "Pick Selector",
+  "cancelPick": "Cancel Pick",
+  "addStep": "Add Step",
+  "delete": "Delete",
+  "exportJson": "Export JSON",
+  "cssSelector": "CSS Selector (id)",
+  "cssSelectorDesc": "CSS selector to find the target element",
+  "pickElement": "Pick element",
+  "cancelPicking": "Cancel picking",
+  "title": "Title",
+  "content": "Content",
+  "contentDivider": "Content",
+  "step": "Step",
+  "untitled": "Untitled",
+  "noSteps": "No steps yet. Click \"Add Step\" to create one.",
+  "newStep": "New Step",
+  "pickMessage": "Click an element to select its CSS selector",
+  "targetNotFound": "⚠️ Target not found: {{selector}}"
+}

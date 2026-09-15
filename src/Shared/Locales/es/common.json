@@ -99,6 +99,64 @@
   "launcher": {
     "label": "Lanzador",
     "ariaLabel": "Lanzador de aplicaciones",
-    "selectedIcon": "Seleccionado: {{icon}}"
+    "selectedIcon": "Seleccionado: {{icon}}",
+    "appLauncherLabel": "Lanzador de aplicaciones",
+    "searchPlaceholder": "Buscar aplicaciones...",
+    "searchLabel": "Buscar aplicaciones",
+    "noAppsMatch": "Ninguna app coincide con \"{{query}}\"",
+    "browseAll": "Explorar todas →",
+    "navigate": "Navegar",
+    "open": "Abrir",
+    "close": "Cerrar",
+    "logout": "Cerrar sesión",
+    "userOptions": "Opciones de usuario",
+    "confirmLogoutMessage": "¿Seguro que quieres cerrar sesión como <strong>{{name}}</strong>?",
+    "confirmUserOptionsMessage": "¿Seguro que quieres volver a la pantalla de inicio como <strong>{{name}}</strong>?"
+  },
+  "colorPicker": {
+    "customColor": "Color personalizado",
+    "ariaLabel": "Selector de color personalizado"
+  },
+  "customAppNotSupported": {
+    "title": "Aplicaciones personalizadas no disponibles"
+  },
+  "dirtyIndicator": {
+    "unsavedChanges": "Cambios sin guardar"
+  },
+  "appMenu": {
+    "ariaLabel": "Menú de aplicación"
+  },
+  "folderTree": {
+    "ariaLabel": "Árbol de carpetas",
+    "homeLabel": "Inicio"
+  },
+  "createItem": {
+    "clearName": "Limpiar nombre",
+    "itemName": "Nombre del elemento"
+  },
+  "fileList": {
+    "ariaLabel": "Archivos"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "ariaLabel": "Explorador de componentes de Storybook"
+  },
+  "wiki": {
+    "title": "Wiki de FDE Desktop",
+    "ariaLabel": "Documentación de wiki con vista de grafo"
+  },
+  "windowControls": {
+    "minimize": "Minimizar",
+    "close": "Cerrar"
+  },
+  "chat": {
+    "removeAttachment": "Eliminar archivo adjunto",
+    "retry": "Reenviar",
+    "pending": "Enviando...",
+    "attachFile": "Adjuntar archivo",
+    "sendMessage": "Enviar mensaje"
+  },
+  "desktop": {
+    "doubleClickToOpen": "Doble clic para abrir"
   }
 }

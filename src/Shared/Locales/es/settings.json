@@ -23,6 +23,18 @@
     "language": {
       "label": "Idioma",
       "description": "Elige tu idioma preferido."
+    },
+    "skins": {
+      "label": "Skins",
+      "description": "Elige un skin predefinido para personalizar la apariencia."
+    },
+    "sound": {
+      "label": "Sonidos",
+      "description": "Configura los sonidos de notificación."
+    },
+    "users": {
+      "label": "Usuarios",
+      "description": "Gestiona las cuentas de usuario y preferencias de sesión."
     }
   },
   "wallpaper": {
@@ -46,7 +58,16 @@
     "angle": "Ángulo",
     "gradientPreview": "Vista previa del degradado",
     "addNoise": "Añadir textura de ruido",
-    "noiseOpacity": "Opacidad del ruido"
+    "noiseOpacity": "Opacidad del ruido",
+    "live": "Animado",
+    "shaderPreset": "Preset del shader",
+    "shaderPresets": {
+      "plasma": "Plasma",
+      "aurora": "Aurora",
+      "waves": "Ondas"
+    },
+    "shaderSpeed": "Velocidad",
+    "shaderIntensity": "Intensidad"
   },
   "appearance": {
     "title": "Apariencia",
@@ -76,7 +97,8 @@
     "modalDescription": "Esto borrará todos tus datos y ajustes.",
     "goBack": "¡Por favor vuelve atrás! 🙏",
     "burnEverything": "¡Sí, quémalo todo! 🔥",
-    "keepFiles": "Sí, pero mantener mis archivos"
+    "keepFiles": "Sí, pero mantener mis archivos",
+    "confirmLabel": "Confirmar restablecimiento"
   },
   "language": {
     "title": "Idioma",
@@ -85,5 +107,79 @@
     "english": "English",
     "spanish": "Español"
   },
-  "all": "Todos los ajustes"
+  "all": "Todos los ajustes",
+  "skins": {
+    "title": "Skins",
+    "description": "Elige un skin predefinido para personalizar la apariencia de tu escritorio.",
+    "selectSkin": "Seleccionar skin {{name}}",
+    "active": "Activo",
+    "windowControls": {
+      "label": "Estilo de botones de ventana",
+      "description": "Sobrescribe el estilo de los botones de ventana independientemente del skin.",
+      "styles": {
+        "classic": "Clásico",
+        "macos": "Semáforo"
+      }
+    }
+  },
+  "launcher": {
+    "iconTitle": "Icono del lanzador",
+    "searchPlaceholder": "Buscar iconos...",
+    "searchLabel": "Buscar iconos"
+  },
+  "sound": {
+    "title": "Sonidos de notificación",
+    "description": "Configura los sonidos para las notificaciones.",
+    "enabled": "Activar sonidos de notificación",
+    "volume": "Volumen",
+    "builtIn": "Sonidos integrados",
+    "custom": "Sonido personalizado",
+    "chooseFromFiles": "Elegir de archivos",
+    "uploadFromDisk": "Subir desde disco",
+    "preview": "Vista previa",
+    "playing": "Reproduciendo...",
+    "noCustomSound": "Ningún sonido personalizado seleccionado",
+    "hit": "Golpe",
+    "drip": "Goteo",
+    "wistle": "Silbido",
+    "wood": "Madera",
+    "previewLabel": "Reproducir vista previa de sonido personalizado"
+  },
+  "users": {
+    "title": "Usuarios",
+    "description": "Gestiona las cuentas de usuario y preferencias de sesión.",
+    "currentUser": "Usuario actual: {{name}}",
+    "admin": "Administrador",
+    "user": "Usuario",
+    "sessionRemembered": "Sesión recordada",
+    "autoLogin": "Auto-login",
+    "name": "Nombre",
+    "newPassword": "Nueva contraseña (dejar vacío = no cambiar)",
+    "isAdmin": "Administrador",
+    "rememberSession": "Recordar sesión",
+    "autoLoginNoPassword": "Auto-login sin contraseña",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "switchUser": "Cambiar a este usuario",
+    "newUser": "+ Nuevo usuario",
+    "newUserModalTitle": "Nuevo usuario",
+    "passwordOptional": "Contraseña (opcional)",
+    "rememberSessionReload": "Recordar sesión al recargar",
+    "create": "Crear",
+    "nameRequired": "El nombre es obligatorio",
+    "createError": "Error al crear usuario",
+    "updateError": "Error al actualizar usuario",
+    "confirmDelete": "¿Eliminar este usuario? Esta acción no se puede deshacer.",
+    "multiUserEnvironment": "Entorno multi-usuario",
+    "multiUserEnvironmentDescription": "Mostrar pantalla de login al iniciar. Cuando está apagado, auto-login con usuario por defecto.",
+    "confirmModeSwitchTitle": "Cambiar modo de usuario",
+    "confirmModeSwitchMessage": "Vas a cambiar a <strong>{{mode}}</strong>. Se cerrará tu sesión actual y se recargará la página. ¿Continuar?",
+    "multiUser": "multi-usuario",
+    "singleUser": "usuario único",
+    "confirmAndReload": "Cambiar y recargar"
+  },
+  "sectionsLabel": "Secciones de ajustes",
+  "allLabel": "Todos los ajustes"
 }

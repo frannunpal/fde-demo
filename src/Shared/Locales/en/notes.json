@@ -11,7 +11,31 @@
     "orderedList": "Ordered list",
     "blockquote": "Blockquote",
     "codeBlock": "Code block",
-    "horizontalRule": "Horizontal rule"
+    "horizontalRule": "Horizontal rule",
+    "underline": "Underline",
+    "clearFormatting": "Clear formatting",
+    "heading3": "Heading 3",
+    "heading4": "Heading 4",
+    "link": "Link",
+    "unlink": "Remove link",
+    "alignLeft": "Align left",
+    "alignCenter": "Align center",
+    "alignRight": "Align right",
+    "alignJustify": "Justify",
+    "highlight": "Highlight",
+    "textColor": "Text color"
   },
-  "untitled": "untitled.md"
+  "untitled": "untitled.md",
+  "linkEditor": {
+    "url": "Enter URL",
+    "openExternal": "Open in new tab",
+    "openInternal": "Open in same tab"
+  },
+  "colorPicker": {
+    "cancel": "Cancel",
+    "clear": "Clear color",
+    "picker": "Color picker",
+    "palette": "Palette",
+    "color": "Set text color {{color}}"
+  }
 }

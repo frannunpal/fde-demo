@@ -23,6 +23,18 @@
     "language": {
       "label": "Language",
       "description": "Choose your preferred language."
+    },
+    "skins": {
+      "label": "Skins",
+      "description": "Choose a preset skin to customize the look."
+    },
+    "sound": {
+      "label": "Sounds",
+      "description": "Configure notification sounds."
+    },
+    "users": {
+      "label": "Users",
+      "description": "Manage user accounts and session preferences."
     }
   },
   "wallpaper": {
@@ -46,7 +58,16 @@
     "angle": "Angle",
     "gradientPreview": "Gradient preview",
     "addNoise": "Add noise texture",
-    "noiseOpacity": "Noise opacity"
+    "noiseOpacity": "Noise opacity",
+    "live": "Live",
+    "shaderPreset": "Shader preset",
+    "shaderPresets": {
+      "plasma": "Plasma",
+      "aurora": "Aurora",
+      "waves": "Waves"
+    },
+    "shaderSpeed": "Speed",
+    "shaderIntensity": "Intensity"
   },
   "appearance": {
     "title": "Appearance",
@@ -76,7 +97,8 @@
     "modalDescription": "This will erase all your data and settings.",
     "goBack": "Please go back! 🙏",
     "burnEverything": "Yes, burn everything! 🔥",
-    "keepFiles": "Yes, but keep my files"
+    "keepFiles": "Yes, but keep my files",
+    "confirmLabel": "Confirm reset"
   },
   "language": {
     "title": "Language",
@@ -85,5 +107,79 @@
     "english": "English",
     "spanish": "Español"
   },
-  "all": "All Settings"
+  "all": "All Settings",
+  "skins": {
+    "title": "Skins",
+    "description": "Choose a preset skin to customize the look of your desktop.",
+    "selectSkin": "Select {{name}} skin",
+    "active": "Active",
+    "windowControls": {
+      "label": "Window Controls Style",
+      "description": "Override the window button style regardless of skin.",
+      "styles": {
+        "classic": "Classic",
+        "macos": "Traffic Lights"
+      }
+    }
+  },
+  "launcher": {
+    "iconTitle": "Launcher Icon",
+    "searchPlaceholder": "Search icons...",
+    "searchLabel": "Search icons"
+  },
+  "sound": {
+    "title": "Notification Sounds",
+    "description": "Configure sounds for notifications.",
+    "enabled": "Enable notification sounds",
+    "volume": "Volume",
+    "builtIn": "Built-in sounds",
+    "custom": "Custom sound",
+    "chooseFromFiles": "Choose from Files",
+    "uploadFromDisk": "Upload from Disk",
+    "preview": "Preview",
+    "playing": "Playing...",
+    "noCustomSound": "No custom sound selected",
+    "hit": "Hit",
+    "drip": "Drip",
+    "wistle": "Whistle",
+    "wood": "Wood",
+    "previewLabel": "Play custom sound preview"
+  },
+  "users": {
+    "title": "Users",
+    "description": "Manage user accounts and session preferences.",
+    "currentUser": "Current user: {{name}}",
+    "admin": "Administrator",
+    "user": "User",
+    "sessionRemembered": "Session remembered",
+    "autoLogin": "Auto-login",
+    "name": "Name",
+    "newPassword": "New password (leave empty = no change)",
+    "isAdmin": "Administrator",
+    "rememberSession": "Remember session",
+    "autoLoginNoPassword": "Auto-login without password",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "switchUser": "Switch to this user",
+    "newUser": "+ New user",
+    "newUserModalTitle": "New user",
+    "passwordOptional": "Password (optional)",
+    "rememberSessionReload": "Remember session on reload",
+    "create": "Create",
+    "nameRequired": "Name is required",
+    "createError": "Error creating user",
+    "updateError": "Error updating user",
+    "confirmDelete": "Delete this user? This action cannot be undone.",
+    "multiUserEnvironment": "Multi-user environment",
+    "multiUserEnvironmentDescription": "Show login screen on startup. When off, auto-login with a default user.",
+    "confirmModeSwitchTitle": "Switch user mode",
+    "confirmModeSwitchMessage": "You are about to switch to <strong>{{mode}}</strong>. Your current session will be closed and the page will reload. Continue?",
+    "multiUser": "multi-user",
+    "singleUser": "single user",
+    "confirmAndReload": "Switch and reload"
+  },
+  "sectionsLabel": "Settings sections",
+  "allLabel": "All Settings"
 }

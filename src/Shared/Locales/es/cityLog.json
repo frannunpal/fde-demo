@@ -1,0 +1,37 @@
+{
+  "title": "Registro de la ciudad",
+  "simTime": "Sim {{time}}",
+  "copy": "Copiar",
+  "filter": {
+    "citizens": "Ciudadanos",
+    "economy": "Economía",
+    "metrics": "Métricas"
+  },
+  "activity": {
+    "sleeping": "está durmiendo",
+    "commuting": "está viajando",
+    "working": "está trabajando",
+    "leisure": "disfruta de su tiempo libre",
+    "home": "está en casa",
+    "sleepingGroup": "{{count}} personas están durmiendo",
+    "commutingGroup": "{{count}} personas están viajando",
+    "workingGroup": "{{count}} personas están trabajando",
+    "leisureGroup": "{{count}} personas disfrutan de su tiempo libre",
+    "homeGroup": "{{count}} personas están en casa"
+  },
+  "citizen": {
+    "spawn": "apareció en la ciudad de {{cityName}}",
+    "spawnGroup": "{{count}} personas aparecieron en la ciudad de {{cityName}}",
+    "arrived": "llegó a {{buildingName}}",
+    "arrivedGroup": "{{count}} personas llegaron a {{buildingName}}"
+  },
+  "economy": {
+    "salaryPaid": "recibió {{amount}} créditos",
+    "salaryPaidGroup": "{{count}} salarios pagados",
+    "rentPaid": "pagó {{amount}} créditos de alquiler",
+    "rentPaidGroup": "{{count}} alquileres pagados",
+    "saleMade": "gastó {{amount}} créditos en {{shopId}}",
+    "saleMadeGroup": "{{count}} compras en {{shopId}}",
+    "metrics": "GDP {{gdp}} · Empleo {{employmentRate}}% · Consumo {{consumption}} · Pob {{population}}"
+  }
+}

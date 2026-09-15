@@ -11,7 +11,31 @@
     "orderedList": "Lista ordenada",
     "blockquote": "Cita",
     "codeBlock": "Bloque de código",
-    "horizontalRule": "Línea horizontal"
+    "horizontalRule": "Línea horizontal",
+    "underline": "Subrayado",
+    "clearFormatting": "Quitar formato",
+    "heading3": "Título 3",
+    "heading4": "Título 4",
+    "link": "Enlace",
+    "unlink": "Quitar enlace",
+    "alignLeft": "Alinear izquierda",
+    "alignCenter": "Centrar",
+    "alignRight": "Alinear derecha",
+    "alignJustify": "Justificar",
+    "highlight": "Resaltar",
+    "textColor": "Color de texto"
   },
-  "untitled": "sin-titulo.md"
+  "untitled": "sin-titulo.md",
+  "linkEditor": {
+    "url": "Introduce URL",
+    "openExternal": "Abrir en nueva pestaña",
+    "openInternal": "Abrir en misma pestaña"
+  },
+  "colorPicker": {
+    "cancel": "Cancelar",
+    "clear": "Quitar color",
+    "picker": "Selector de color",
+    "palette": "Paleta",
+    "color": "Color de texto {{color}}"
+  }
 }

@@ -1,0 +1,30 @@
+{
+  "generation": {
+    "failed": "Generation failed",
+    "retry": "Retry",
+    "water": "Water",
+    "roads": "Roads",
+    "waterEnabled": "Enabled",
+    "waterNoise": "Noise",
+    "waterNoiseSize": "Noise Size",
+    "waterNoiseAngle": "Noise Angle",
+    "bankSize": "Bank Size",
+    "riverSize": "River Size",
+    "main": "Main",
+    "major": "Major",
+    "parks": "Parks",
+    "buildings": "Buildings"
+  },
+  "menuBar": {
+    "citySeed": "City seed",
+    "generationNotAvailable": "Generation not available in Sun Study view",
+    "cancelGeneration": "Cancel generation",
+    "generateCity": "Generate city"
+  },
+  "theatre": {
+    "resetDefaults": "Reset to defaults"
+  },
+  "dayNight": {
+    "title": "Day / Night Cycle"
+  }
+}

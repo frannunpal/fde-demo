@@ -10,13 +10,15 @@
       "maximize": "Maximize",
       "restore": "Restore",
       "close": "Close"
-    }
+    },
+    "snapPreview": "Snap preview"
   },
   "unsavedModal": {
     "title": "Unsaved Changes",
     "message": "You have unsaved changes. What would you like to do?",
     "dontSave": "Don't Save",
-    "save": "Save"
+    "save": "Save",
+    "cancel": "Cancel"
   },
   "fileDialog": {
     "openFile": "Open file",
@@ -25,5 +27,18 @@
     "openFolder": "Open folder {{name}}",
     "selectFolder": "Select folder",
     "filename": "filename.md"
+  },
+  "dropOverlay": {
+    "dropHere": "Drop here",
+    "dropToOpen": "Drop to open",
+    "incompatibleFile": "This file type is not compatible with this application"
+  },
+  "dropMenu": {
+    "move": "Move here",
+    "copy": "Copy here",
+    "cancel": "Cancel",
+    "movePrompt": "Move \"{{name}}\"?",
+    "from": "From:",
+    "to": "To:"
   }
 }

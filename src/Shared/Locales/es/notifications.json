@@ -6,6 +6,14 @@
   "taskbar": {
     "showNotifications": "Mostrar notificaciones",
     "hideNotifications": "Ocultar notificaciones",
-    "clock": "reloj"
+    "clock": "reloj",
+    "unreadCount_one": "{{count}} notificación sin leer",
+    "unreadCount_other": "{{count}} notificaciones sin leer"
+  },
+  "notifCenter": {
+    "title": "Notificaciones",
+    "markAllRead": "Marcar todas como leídas",
+    "clearAll": "Limpiar todas",
+    "dismiss": "Descartar notificación"
   }
 }

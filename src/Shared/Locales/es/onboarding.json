@@ -1,0 +1,20 @@
+{
+  "pickSelector": "Seleccionar Elemento",
+  "cancelPick": "Cancelar Selección",
+  "addStep": "Añadir Paso",
+  "delete": "Eliminar",
+  "exportJson": "Exportar JSON",
+  "cssSelector": "Selector CSS (id)",
+  "cssSelectorDesc": "Selector CSS para encontrar el elemento objetivo",
+  "pickElement": "Elegir elemento",
+  "cancelPicking": "Cancelar selección",
+  "title": "Título",
+  "content": "Contenido",
+  "contentDivider": "Contenido",
+  "step": "Paso",
+  "untitled": "Sin título",
+  "noSteps": "No hay pasos. Haz clic en \"Añadir Paso\" para crear uno.",
+  "newStep": "Nuevo Paso",
+  "pickMessage": "Haz clic en un elemento para seleccionar su selector CSS",
+  "targetNotFound": "⚠️ Elemento no encontrado: {{selector}}"
+}

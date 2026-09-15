@@ -10,13 +10,15 @@
       "maximize": "Maximizar",
       "restore": "Restaurar",
       "close": "Cerrar"
-    }
+    },
+    "snapPreview": "Vista previa de ajuste"
   },
   "unsavedModal": {
     "title": "Cambios sin guardar",
     "message": "Tienes cambios sin guardar. ¿Qué deseas hacer?",
     "dontSave": "No guardar",
-    "save": "Guardar"
+    "save": "Guardar",
+    "cancel": "Cancelar"
   },
   "fileDialog": {
     "openFile": "Abrir archivo",
@@ -25,5 +27,18 @@
     "openFolder": "Abrir carpeta {{name}}",
     "selectFolder": "Seleccionar carpeta",
     "filename": "nombre.md"
+  },
+  "dropOverlay": {
+    "dropHere": "Arrastrar aquí",
+    "dropToOpen": "Soltar para abrir",
+    "incompatibleFile": "Este tipo de archivo no es compatible con esta aplicación"
+  },
+  "dropMenu": {
+    "move": "Mover aquí",
+    "copy": "Copiar aquí",
+    "cancel": "Cancelar",
+    "movePrompt": "¿Mover \"{{name}}\"?",
+    "from": "Desde:",
+    "to": "Hasta:"
   }
 }

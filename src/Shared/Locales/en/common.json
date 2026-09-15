@@ -99,6 +99,64 @@
   "launcher": {
     "label": "Launcher",
     "ariaLabel": "App launcher",
-    "selectedIcon": "Selected: {{icon}}"
+    "selectedIcon": "Selected: {{icon}}",
+    "appLauncherLabel": "App launcher",
+    "searchPlaceholder": "Search apps...",
+    "searchLabel": "Search apps",
+    "noAppsMatch": "No apps match \"{{query}}\"",
+    "browseAll": "Browse all apps →",
+    "navigate": "Navigate",
+    "open": "Open",
+    "close": "Close",
+    "logout": "Log out",
+    "userOptions": "User options",
+    "confirmLogoutMessage": "Are you sure you want to log out as <strong>{{name}}</strong>?",
+    "confirmUserOptionsMessage": "Are you sure you want to go back to the home screen as <strong>{{name}}</strong>?"
+  },
+  "colorPicker": {
+    "customColor": "Custom color",
+    "ariaLabel": "Custom color picker"
+  },
+  "customAppNotSupported": {
+    "title": "Custom Apps Not Available"
+  },
+  "dirtyIndicator": {
+    "unsavedChanges": "Unsaved changes"
+  },
+  "appMenu": {
+    "ariaLabel": "Application menu"
+  },
+  "folderTree": {
+    "ariaLabel": "Folder tree",
+    "homeLabel": "Home"
+  },
+  "createItem": {
+    "clearName": "Clear name",
+    "itemName": "Item name"
+  },
+  "fileList": {
+    "ariaLabel": "Files"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "ariaLabel": "Storybook component explorer"
+  },
+  "wiki": {
+    "title": "FDE Desktop Wiki",
+    "ariaLabel": "Wiki documentation with graph view"
+  },
+  "windowControls": {
+    "minimize": "Minimize",
+    "close": "Close"
+  },
+  "chat": {
+    "removeAttachment": "Remove attachment",
+    "retry": "Retry send",
+    "pending": "Sending...",
+    "attachFile": "Attach file",
+    "sendMessage": "Send message"
+  },
+  "desktop": {
+    "doubleClickToOpen": "Double-click to open"
   }
 }

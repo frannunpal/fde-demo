@@ -1,0 +1,37 @@
+{
+  "title": "City Log",
+  "simTime": "Sim {{time}}",
+  "copy": "Copy",
+  "filter": {
+    "citizens": "Citizens",
+    "economy": "Economy",
+    "metrics": "Metrics"
+  },
+  "activity": {
+    "sleeping": "is sleeping",
+    "commuting": "is commuting",
+    "working": "is working",
+    "leisure": "is enjoying free time",
+    "home": "is at home",
+    "sleepingGroup": "{{count}} people are sleeping",
+    "commutingGroup": "{{count}} people are commuting",
+    "workingGroup": "{{count}} people are working",
+    "leisureGroup": "{{count}} people are enjoying free time",
+    "homeGroup": "{{count}} people are at home"
+  },
+  "citizen": {
+    "spawn": "appeared in the city of {{cityName}}",
+    "spawnGroup": "{{count}} people appeared in the city of {{cityName}}",
+    "arrived": "arrived at {{buildingName}}",
+    "arrivedGroup": "{{count}} people arrived at {{buildingName}}"
+  },
+  "economy": {
+    "salaryPaid": "received {{amount}} credits",
+    "salaryPaidGroup": "{{count}} salaries paid",
+    "rentPaid": "paid {{amount}} credits rent",
+    "rentPaidGroup": "{{count}} rents paid",
+    "saleMade": "spent {{amount}} credits at {{shopId}}",
+    "saleMadeGroup": "{{count}} purchases at {{shopId}}",
+    "metrics": "GDP {{gdp}} · Employment {{employmentRate}}% · Consumption {{consumption}} · Pop {{population}}"
+  }
+}

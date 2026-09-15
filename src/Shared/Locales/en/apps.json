@@ -17,7 +17,8 @@
     "deviceInfo": "Device Info",
     "welcome": "Welcome",
     "menuedit": "Edit Launcher",
-    "codeServer": "VS Code"
+    "codeServer": "VS Code",
+    "calculator": "Calculator"
   },
   "folders": {
     "socialLinks": "Social Links",
@@ -99,7 +100,9 @@
     "stepDone": "Done",
     "folderSelected": "Folder selected",
     "uploadTo": "Destination",
-    "uploadToRoot": "Uploading to root folder"
+    "uploadToRoot": "Uploading to root folder",
+    "stepConfig": "Configure",
+    "stepProgress": "Progress"
   },
   "terminal": {
     "notAvailable": "Terminal Not Available",
@@ -129,6 +132,23 @@
   "codeServer": {
     "notAvailable": "VS Code Not Available",
     "notAvailableMessage": "VS Code (code-server) cannot be used in browser mode.",
-    "dockerRequired": "Please run in Docker to use VS Code."
+    "dockerRequired": "Please run in Docker to use VS Code.",
+    "title": "VS Code",
+    "starting": "Starting VS Code...",
+    "failed": "Failed to start VS Code"
+  },
+  "files": {
+    "toolbar": {
+      "home": "Home",
+      "back": "Back",
+      "forward": "Forward",
+      "up": "Up",
+      "searchPlaceholder": "Search files...",
+      "noResults": "No files match your search",
+      "newFolder": "New Folder",
+      "newFile": "New File",
+      "gridView": "Grid view",
+      "listView": "List view"
+    }
   }
 }

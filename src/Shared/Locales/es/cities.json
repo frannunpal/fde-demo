@@ -1,0 +1,30 @@
+{
+  "generation": {
+    "failed": "Error al generar",
+    "retry": "Reintentar",
+    "water": "Agua",
+    "roads": "Carreteras",
+    "waterEnabled": "Activado",
+    "waterNoise": "Ruido",
+    "waterNoiseSize": "Tamaño de ruido",
+    "waterNoiseAngle": "Ángulo de ruido",
+    "bankSize": "Tamaño de banco",
+    "riverSize": "Tamaño de río",
+    "main": "Principal",
+    "major": "Mayor",
+    "parks": "Parques",
+    "buildings": "Edificios"
+  },
+  "menuBar": {
+    "citySeed": "Semilla de ciudad",
+    "generationNotAvailable": "Generación no disponible en vista Sun Study",
+    "cancelGeneration": "Cancelar generación",
+    "generateCity": "Generar ciudad"
+  },
+  "theatre": {
+    "resetDefaults": "Restablecer valores"
+  },
+  "dayNight": {
+    "title": "Ciclo día / noche"
+  }
+}

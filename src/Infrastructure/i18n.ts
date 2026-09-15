@@ -11,6 +11,9 @@ import enNotifications from '@shared/Locales/en/notifications.json';
 import enNotes from '@shared/Locales/en/notes.json';
 import enWelcome from '@shared/Locales/en/welcome.json';
 import enMenuedit from '@shared/Locales/en/menuedit.json';
+import enCities from '@shared/Locales/en/cities.json';
+import enCityLog from '@shared/Locales/en/cityLog.json';
+import enOnboarding from '@shared/Locales/en/onboarding.json';
 
 import esCommon from '@shared/Locales/es/common.json';
 import esApps from '@shared/Locales/es/apps.json';
@@ -21,6 +24,9 @@ import esNotifications from '@shared/Locales/es/notifications.json';
 import esNotes from '@shared/Locales/es/notes.json';
 import esWelcome from '@shared/Locales/es/welcome.json';
 import esMenuedit from '@shared/Locales/es/menuedit.json';
+import esCities from '@shared/Locales/es/cities.json';
+import esCityLog from '@shared/Locales/es/cityLog.json';
+import esOnboarding from '@shared/Locales/es/onboarding.json';
 
 export const SUPPORTED_LANGUAGES = ['en', 'es'] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
@@ -42,6 +48,9 @@ i18n
         notes: enNotes,
         welcome: enWelcome,
         menuedit: enMenuedit,
+        cities: enCities,
+        cityLog: enCityLog,
+        onboarding: enOnboarding,
       },
       es: {
         common: esCommon,
@@ -53,6 +62,9 @@ i18n
         notes: esNotes,
         welcome: esWelcome,
         menuedit: esMenuedit,
+        cities: esCities,
+        cityLog: esCityLog,
+        onboarding: esOnboarding,
       },
     },
     fallbackLng: DEFAULT_LANGUAGE,
@@ -67,6 +79,9 @@ i18n
       'notes',
       'welcome',
       'menuedit',
+      'cities',
+      'cityLog',
+      'onboarding',
     ],
     defaultNS: 'common',
     interpolation: {
